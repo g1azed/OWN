@@ -102,13 +102,13 @@ const Header = () => {
           </ListItem>
           <ListItem isActive={isActive("/appservice")} $color={color}>
             <Link to="/appservice">SERVICE</Link>
-          </ListItem>
-          <ListItem isActive={isActive("/analog")} $color={color}>
+          </li>
+          <li>
             <Link to="/analog">ANALOG</Link>
-          </ListItem>
-          <ListItem isActive={isActive("/sticker")} $color={color}>
-            <Link to="/sticker">POSTCARD</Link>
-          </ListItem>
+          </li>
+          <li>
+            <Link to="/postcard">POSTCARD</Link>
+          </li>
         </HeaderContentList>
       </ContentListWrap>
       <SoundBtn />

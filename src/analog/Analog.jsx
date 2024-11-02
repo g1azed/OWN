@@ -1,5 +1,5 @@
 import React from 'react';
-import AnalogImg from '../assets/analog/analog.png'
+import AnalogImg from '../assets/analog/analog_final.png'
 import styled from 'styled-components'
 
 const AnalogWrap = styled.div`
