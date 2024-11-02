@@ -13,7 +13,7 @@ const Router = () => {
       <Route path="/" element={<BrandStory />} />
       <Route path="/introbranding" element={<IntroBranding />} />
       <Route path="/appservice" element={<AppService />} />
-      <Route path="/postCard" element={<PostCard />} />
+      <Route path="/postcard" element={<PostCard />} />
       <Route path="/analog" element={<Analog />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

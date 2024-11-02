@@ -1,5 +1,4 @@
 import "./App.css";
-import { Reset } from "styled-reset";
 import { BrowserRouter } from "react-router-dom";
 import GlobalStyle from "./GlobalStyle";
 import { ColorProvider } from "./ColorContext";
@@ -10,9 +9,8 @@ import Router from "./Router";
 function App() {
   return (
     <ColorProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <GlobalStyle />
-        <Reset />
         <Header />
         <Router />
         <Footer />
