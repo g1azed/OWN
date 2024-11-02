@@ -10,6 +10,7 @@ import { useColor } from "../ColorContext";
 import { colors } from "../styles";
 
 const MAIN_ORANGE = colors.mainOrange;
+const WHITE = "#FFFFFF";
 
 const HeaderWrap = styled.header`
   display: flex;
@@ -37,12 +38,13 @@ const HeaderContentList = styled.ol`
   align-items: center;
   padding: 0 ${vwCalc(56)};
   gap: ${vwCalc(60)};
+`;
 
-  li {
-    font-size: 1.25vw;
-    color: ${(props) => props.$color};
-  }
-  li:hover {
+const ListItem = styled.li`
+  font-size: ${vwCalc(24)};
+  color: ${(props) => props.$color};
+  font-weight: ${(props) => (props.isActive ? 600 : 400)};
+  &:hover {
     font-weight: 600;
   }
 `;
@@ -54,7 +56,7 @@ const Header = () => {
   );
 
   const { color, setColor } = useColor();
-  let Logo = color === MAIN_ORANGE ? logoOrange : logoWhite;
+  const Logo = color === MAIN_ORANGE ? logoOrange : logoWhite;
 
   useEffect(() => {
     const isRootPath =
@@ -62,12 +64,31 @@ const Header = () => {
 
     setIsRoot(isRootPath);
 
-    if (!isRootPath) {
+    if (location.pathname === "/appservice") {
+      setColor(WHITE);
+    } else if (!isRootPath) {
       setColor(MAIN_ORANGE);
     }
 
     window.scrollTo(0, 0);
   }, [location.pathname, setColor]);
+
+  useEffect(() => {
+    if (location.pathname === "/appservice") {
+      const handleScroll = () => {
+        const threshold = window.innerHeight;
+        setColor(window.scrollY > threshold ? MAIN_ORANGE : WHITE);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [location.pathname, setColor]);
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <HeaderWrap $isRoot={isRoot} $color={color}>
@@ -75,11 +96,11 @@ const Header = () => {
         <ImgBox src={Logo} alt="OWN 로고" width={110} height={33} />
       </Link>
       <ContentListWrap $color={color}>
-        <HeaderContentList $color={color}>
-          <li>
+        <HeaderContentList>
+          <ListItem isActive={isActive("/introbranding")} $color={color}>
             <Link to="/introbranding">BRANDING</Link>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem isActive={isActive("/appservice")} $color={color}>
             <Link to="/appservice">SERVICE</Link>
           </li>
           <li>

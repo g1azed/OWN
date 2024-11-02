@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { useState } from "react";
 import vwCalc from "../../util/vwCalc";
 import { BasePoppins150 } from "../style/BasePoppins";
 import { BasePretendard20 } from "../style/BasePretendard";
@@ -6,7 +7,9 @@ import ImgBox from "../ImgBox";
 import needs1 from "../../assets/brandStory/needs1.png";
 import needs2 from "../../assets/brandStory/needs2.png";
 import needs3 from "../../assets/brandStory/needs3.png";
-import line from "../../assets/icon/line_drawing_needs.gif";
+import useIntersectionObserverRef from "../../hook/useIntersectionObserverRef";
+import { ReactComponent as LineSVG1 } from "../../assets/icon/needLine1.svg";
+import { ReactComponent as LineSVG2 } from "../../assets/icon/needLine2.svg";
 
 const Poppins150 = styled(BasePoppins150)`
   text-transform: uppercase;
@@ -63,9 +66,82 @@ const images = [
   },
 ];
 
+// Keyframes
+const drawLine1 = keyframes`
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+`;
+
+const drawFirstPath = keyframes`
+  from {
+    stroke-dashoffset: -2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+`;
+
+const drawSecondPath = keyframes`
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+`;
+
+// 애니메이션 적용 컴포넌트
+const Line1 = styled(LineSVG1)`
+  position: absolute;
+  top: ${vwCalc(762)};
+  left: ${vwCalc(611)};
+  width: ${vwCalc(137)};
+  height: ${vwCalc(87)};
+
+  path {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: ${(props) => (props.$isVisible ? drawLine1 : "none")} 3.5s ease
+      forwards;
+  }
+`;
+
+const Line2 = styled(LineSVG2)`
+  position: absolute;
+  top: ${vwCalc(508)};
+  left: ${vwCalc(896)};
+  width: ${vwCalc(583)};
+  height: ${vwCalc(302)};
+
+  path:nth-child(1) {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: -2000;
+    animation: ${(props) => (props.$isVisible ? drawFirstPath : "none")} 2.2s
+      ease-out 0.5s forwards;
+  }
+
+  path:nth-child(2) {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: ${(props) => (props.$isVisible ? drawSecondPath : "none")} 2.5s
+      ease 2.65s forwards;
+  }
+`;
+
 const Needs = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const ref = useIntersectionObserverRef({
+    callback: () => setIsVisible(true),
+    options: { threshold: 0.1 },
+  });
+
   return (
-    <>
+    <section ref={ref}>
       <Poppins150>
         {words.map((word, index) => (
           <Word key={index} $top={word.top} $left={word.left}>
@@ -90,8 +166,9 @@ const Needs = () => {
         "그들에게 가장 필요한 것은 무엇일까?" 라는 고민 끝에
       </Pretendard20>
 
-      <NeedsImgBox src={line} hideScreenReader={true} $top={0} $left={0} />
-    </>
+      <Line1 $isVisible={isVisible} />
+      <Line2 $isVisible={isVisible} />
+    </section>
   );
 };
 

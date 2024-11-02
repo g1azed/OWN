@@ -74,13 +74,13 @@ const SoundWaveItem = styled.i`
   margin-right: 0.4vw;
   height: 0.5vw;
   background: white;
-  animation: ${({ isAnimating }) =>
-    isAnimating ? "none" : "none"}; /* 기본 애니메이션 */
+  animation: ${({ $isAnimating }) =>
+    $isAnimating ? "none" : "none"}; /* 기본 애니메이션 */
 
-  ${({ isAnimating, index }) =>
-    isAnimating &&
+  ${({ $isAnimating, $index }) =>
+    $isAnimating &&
     css`
-      animation: ${index % 2 === 0 ? quiet : index % 3 === 0 ? loud : normal}
+      animation: ${$index % 2 === 0 ? quiet : $index % 3 === 0 ? loud : normal}
         1.2s ease-in-out infinite;
     `}
 `;

@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import { useState } from "react";
 import vwCalc from "../../util/vwCalc";
 import { colors } from "../../styles";
 import { BasePoppins100 } from "../style/BasePoppins";
 import { BasePretendard20 } from "../style/BasePretendard";
-import ImgBox from "../ImgBox";
-import useIntersectionObserverRef from "../../hook/useIntersectionObserverRef";
-import papers from "../../assets/brandStory/papers.png";
-import papersGif from "../../assets/brandStory/papers.gif";
+
+import PaperImgData from "./overflow/PaperImgData";
+import PaperImgBox from "./overflow/PaperImgBox";
 
 const MAIN_ORANGE = colors.mainOrange;
-const IMAGE_CHANGE_DELAY = 1000;
 
 const Poppins100 = styled(BasePoppins100)`
   padding-top: ${vwCalc(392)};
@@ -20,42 +17,53 @@ const Poppins100 = styled(BasePoppins100)`
   color: ${MAIN_ORANGE};
   text-transform: capitalize;
 `;
-
 const Pretendard20 = styled(BasePretendard20)`
   position: absolute;
   top: ${vwCalc(434)};
   left: ${vwCalc(872)};
 `;
 
-const PaperImgBox = styled(ImgBox)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-`;
-
 const Overflow2 = () => {
-  const [currentImg, setCurrentImg] = useState(papers);
-
-  const ImageChangeTimer = () => {
-    setTimeout(() => {
-      setCurrentImg(papersGif);
-    }, IMAGE_CHANGE_DELAY);
-  };
-
-  const sectionRef = useIntersectionObserverRef({
-    callback: ImageChangeTimer,
-    options: { threshold: 0.5 },
-  });
-
   return (
-    <div ref={sectionRef}>
-      <PaperImgBox
-        src={currentImg}
-        alt="뭉쳐진 종이들"
-        width={1920}
-        height={1080}
+    <section>
+      {PaperImgData.map((data, index) => (
+        <PaperImgBox
+          key={index}
+          $type={data.$type}
+          $top={data.$top}
+          $left={data.$left}
+          $hoverX={data.$hoverX}
+          $hoverY={data.$hoverY}
+          $reverse={data.$reverse}
+        />
+      ))}
+      {/* <PaperImgBox1
+        src={paper1}
+        alt="종이뭉치"
+        $top={333}
+        $left={950}
+        $reverse={true}
       />
+      <PaperImgBox1
+        src={paper1}
+        alt="종이뭉치"
+        $top={368}
+        $left={458}
+        $reverse={true}
+      />
+      <PaperImgBox1
+        src={paper1}
+        alt="종이뭉치"
+        $top={225}
+        $left={1399}
+        $reverse={true}
+      />
+
+      <PaperImgBox1 src={paper1} alt="종이뭉치" $top={520} $left={564} />
+      <PaperImgBox1 src={paper1} alt="종이뭉치" $top={240} $left={763} />
+      <PaperImgBox1 src={paper1} alt="종이뭉치" $top={482} $left={1227} />
+      <PaperImgBox1 src={paper1} alt="종이뭉치" $top={328} $left={78} /> */}
+
       <Poppins100>
         i always
         <br /> had to do something.
@@ -65,7 +73,7 @@ const Overflow2 = () => {
         <br /> 성인이 되어서도 여전히 바쁘게 살아야 하는 우리는 문제가 있는지도
         몰랐습니다.
       </Pretendard20>
-    </div>
+    </section>
   );
 };
 

@@ -28,6 +28,7 @@ import RecordImg from '../assets/appservice/record_img.png'
 import Wish_img_1 from '../assets/appservice/wish_1.png'
 import Wish_img_2 from '../assets/appservice/wish_2.png'
 import WishUnion from '../assets/appservice/Union.png'
+import Bottom from '../assets/appservice/appservice_bottom.png'
 
 
 const AppServiceHome = styled.div`
@@ -52,7 +53,7 @@ const AppServiceHome = styled.div`
         position: absolute;
         transform: rotate(-0.89deg);
         bottom: 0;
-        right: 0;
+        right: 0.52vw;
 
     }
 `
@@ -216,6 +217,7 @@ const WishWrap = styled.div`
     border-radius: 0 50% 50% 0 ;
     div.wish_img_wrap{
         position: relative;
+        height: 65vw;
         img{ 
             width: 22.9vw; 
             position: absolute;
@@ -353,6 +355,7 @@ const AppService = () => {
                     <img src={Wish_img_2} />
                     <img src={WishUnion}/>
                 </div>
+                <img src={Bottom} />
             </WishWrap>
         </>
     );

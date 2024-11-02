@@ -86,10 +86,10 @@ const Outro = ({ scrollToTop }) => {
         <SquareLink to="/introbranding" $background={`url(${branding})`}>
           branding
         </SquareLink>
-        <SquareLink to="/" $background={colors.mainBlue}>
+        <SquareLink to="/service" $background={colors.mainBlue}>
           service
         </SquareLink>
-        <SquareLink to="/" $background={colors.mainOrange}>
+        <SquareLink to="/analog" $background={colors.mainOrange}>
           analog
         </SquareLink>
       </Flex>

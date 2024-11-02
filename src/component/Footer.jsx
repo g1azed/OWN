@@ -160,7 +160,7 @@ const Footer = () => {
           ))}
         </Flex>
 
-        <CopyRightWrapper color={color}>
+        <CopyRightWrapper $color={color}>
           <address>
             Copyright &copy; 2024 OWN. 나만의 휴식을 소유하다. Own your own
             rest.

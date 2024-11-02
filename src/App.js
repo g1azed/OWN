@@ -1,5 +1,4 @@
 import "./App.css";
-import { Reset } from "styled-reset";
 import { BrowserRouter } from "react-router-dom";
 import GlobalStyle from "./GlobalStyle";
 import { ColorProvider } from "./ColorContext";
@@ -12,7 +11,6 @@ function App() {
     <ColorProvider>
       <BrowserRouter>
         <GlobalStyle />
-        <Reset />
         <Header />
         <Router />
         <Footer />

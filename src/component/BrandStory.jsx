@@ -53,6 +53,7 @@ const backgroundColors = {
 
 const SectionWrapper = styled.div`
   position: relative;
+  overflow-x: ${(props) => (props.$isOverflowHidden ? "hidden" : "auto")};
   overflow-y: ${(props) => (props.$isScrollable ? "auto" : "hidden")};
   height: 100vh;
   background-color: ${(props) =>
@@ -117,7 +118,7 @@ const BrandStory = () => {
       ),
     },
     { content: <Overflow1 /> },
-    { content: <Overflow2 /> },
+    { content: <Overflow2 />, isOverflowHidden: true },
     { content: <Overflow3 /> },
     { content: <Survey /> },
     { content: <Needs /> },
@@ -160,6 +161,7 @@ const BrandStory = () => {
           <Section key={index} className={`section${index + 1}`}>
             <SectionWrapper
               $index={index}
+              $isOverflowHidden={section.isOverflowHidden || false}
               $isScrollable={section.isScrollable || false}
             >
               {section.content}
