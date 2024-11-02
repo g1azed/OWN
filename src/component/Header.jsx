@@ -83,10 +83,10 @@ const Header = () => {
             <Link to="/appservice">SERVICE</Link>
           </li>
           <li>
-            <Link to="/">ANALOG</Link>
+            <Link to="/analog">ANALOG</Link>
           </li>
           <li>
-            <Link to="/sticker">POSTCARD</Link>
+            <Link to="/postcard">POSTCARD</Link>
           </li>
         </HeaderContentList>
       </ContentListWrap>

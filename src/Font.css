@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("./assets/font/pretendard-regular.woff2") format("woff2"),
-    url("./assets/font/pretendard-regular.woff") format("woff"),
-    url("./assets/font/pretendard-regular.ttf") format("truetype");
+  src: url("./assets/font/Pretendard-Regular.woff2") format("woff2"),
+    url("./assets/font/Pretendard-Regular.woff") format("woff")
+      url("./assets/font/Pretendard-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   unicode-range: U+AC00-D7A3;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/font/poppins-regular.woff2") format("woff2"),
-    url("./assets/font/poppins-regular.woff") format("woff"),
-    url("./assets/font/poppins-regular.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Regular.woff2") format("woff2"),
+    url("./assets/font/Poppins-Regular.woff") format("woff"),
+    url("./assets/font/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   unicode-range: U+0041-005A, U+0061-007A;
@@ -20,9 +20,9 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/font/poppins-medium.woff2") format("woff2"),
-    url("./assets/font/poppins-medium.woff") format("woff"),
-    url("./assets/font/poppins-medium.ttf") format("truetype");
+  src: url("./assets/font/Poppins-Medium.woff2") format("woff2"),
+    url("./assets/font/Poppins-Medium.woff") format("woff"),
+    url("./assets/font/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   unicode-range: U+0041-005A, U+0061-007A;
@@ -30,9 +30,9 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/font/poppins-semiBold.woff2") format("woff2"),
-    url("./assets/font/poppins-semiBold.woff") format("woff"),
-    url("./assets/font/poppins-semiBold.ttf") format("truetype");
+  src: url("./assets/font/Poppins-SemiBold.woff2") format("woff2"),
+    url("./assets/font/Poppins-SemiBold.woff") format("woff"),
+    url("./assets/font/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   unicode-range: U+0041-005A, U+0061-007A;
