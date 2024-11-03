@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useRef } from "react";
+import { useRef, forwardRef, useImperativeHandle } from "react";
 
 const ScrollContainer = styled.div`
   overflow: hidden;
@@ -25,8 +25,11 @@ const ScrollContainer = styled.div`
   }
 `;
 
-const DraggableScroll = ({ children, direction = "y" }) => {
+const DraggableScroll = forwardRef(({ children, direction = "y" }, ref) => {
   const scrollRef = useRef(null);
+
+  useImperativeHandle(ref, () => scrollRef.current);
+
   const isDragging = useRef(false);
   const startPos = useRef(0);
   const scrollPos = useRef(0);
@@ -75,6 +78,6 @@ const DraggableScroll = ({ children, direction = "y" }) => {
       {children}
     </ScrollContainer>
   );
-};
+});
 
 export default DraggableScroll;

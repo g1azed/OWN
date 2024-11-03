@@ -63,6 +63,9 @@ const OwnStarImgBox = styled(ImgBox)`
 const rotateHow = keyframes`
   0% {
     transform: rotate(-10deg);
+    opacity: 0;
+  }
+  15% {
     opacity: 1;
   }
   35% {
@@ -97,7 +100,7 @@ const drawLine2 = keyframes`
 
 const drawLine3 = keyframes`
   from {
-    stroke-dashoffset: 1200;
+    stroke-dashoffset: 1400;
   }
   to {
     stroke-dashoffset: 0;
@@ -112,7 +115,7 @@ const How = styled(Italic)`
   font-size: ${vwCalc(28)};
   opacity: 0;
   animation: ${(props) => (props.$isVisible ? rotateHow : "none")} 1.2s ease-in
-    1.6s forwards;
+    1.4s forwards;
 `;
 
 const Line1 = styled(LineSVG1)`
@@ -125,8 +128,8 @@ const Line1 = styled(LineSVG1)`
   path {
     stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
-    animation: ${(props) => (props.$isVisible ? drawLine1 : "none")} 1.3s
-      ease-in-out 2.8s forwards;
+    animation: ${(props) => (props.$isVisible ? drawLine1 : "none")} 1.2s
+      ease-in-out 2.65s forwards;
   }
 `;
 
@@ -141,21 +144,21 @@ const Line2 = styled(LineSVG2)`
     stroke-dasharray: 1200;
     stroke-dashoffset: -1200;
     animation: ${(props) => (props.$isVisible ? drawLine2 : "none")} 2s ease-out
-      2.9s forwards;
+      2.76s forwards;
   }
 `;
 
 const Line3 = styled(LineSVG3)`
   position: absolute;
   top: ${vwCalc(588)};
-  left: ${vwCalc(574)};
-  width: ${vwCalc(1136)};
-  height: ${vwCalc(16)};
+  left: ${vwCalc(564)};
+  width: ${vwCalc(1163)};
+  height: ${vwCalc(15)};
 
   path {
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200;
-    animation: ${(props) => (props.$isVisible ? drawLine3 : "none")} 1.5s
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: ${(props) => (props.$isVisible ? drawLine3 : "none")} 1.6s
       ease-in-out forwards;
   }
 `;

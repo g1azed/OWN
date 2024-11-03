@@ -6,16 +6,36 @@ import SurveyTitle from "./SurveyTitle";
 import SurveyInfo from "./SurveyInfo";
 import BarChartContainer from "./BarChartContainer";
 
-const GRAY = "#DFDFDF";
 const MAIN_ORANGE = colors.mainOrange;
+const BIG_BLACK = colors.bigBlack;
+const WHITE = "#FFFFFF";
+const GRAY = "#DFDFDF";
+
+const Label = styled.span`
+  color: ${(props) => props.$color};
+`;
 
 const barChartData = [
-  { color: GRAY, targetHeight: vwCalc(346), label: "1 to 10 minutes" },
-  { color: GRAY, targetHeight: vwCalc(503), label: "10 to 30 minutes" },
+  {
+    color: GRAY,
+    targetHeight: vwCalc(346),
+    label: <Label $color={BIG_BLACK}>1 to 10 minutes</Label>,
+  },
+  {
+    color: GRAY,
+    targetHeight: vwCalc(503),
+    label: <Label $color={BIG_BLACK}>10 to 30 minutes</Label>,
+  },
   {
     color: MAIN_ORANGE,
     targetHeight: vwCalc(914),
-    label: "30 minutes to 1 hour",
+    label: (
+      <Label $color={WHITE}>
+        30 minutes
+        <br />
+        to 1 hour
+      </Label>
+    ),
   },
 ];
 
@@ -55,8 +75,9 @@ const Survey2 = () => {
             key={index}
             color={data.color}
             $targetHeight={data.targetHeight}
-            label={data.label}
-          />
+          >
+            {data.label}
+          </BarChartContainer>
         ))}
       </BarChartWrapper>
     </Wrapper>
