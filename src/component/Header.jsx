@@ -107,7 +107,7 @@ const Header = () => {
                         <Link to="/analog">ANALOG</Link>
                     </ListItem>
                     <ListItem isActive={isActive("/postcard")} $color={color}>
-                        <Link to="/sticker">POSTCARD</Link>
+                        <Link to="/postcard">POSTCARD</Link>
                     </ListItem>
                 </HeaderContentList>
             </ContentListWrap>

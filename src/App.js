@@ -9,7 +9,7 @@ import Router from "./Router";
 function App() {
   return (
     <ColorProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/own">
         <GlobalStyle />
         <Header />
         <Router />
