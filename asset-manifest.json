@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "https://g1azed.github.io/own.io/static/css/main.45895189.css",
-    "main.js": "https://g1azed.github.io/own.io/static/js/main.4ed90faf.js",
-    "static/media/analog_final.png": "https://g1azed.github.io/own.io/static/media/analog_final.51881278b922f7caceea.png",
+    "main.js": "https://g1azed.github.io/own.io/static/js/main.3acfed40.js",
+    "static/media/analog_f2.png": "https://g1azed.github.io/own.io/static/media/analog_f2.5f00051234acd5031582.png",
+    "static/media/analog_f.png": "https://g1azed.github.io/own.io/static/media/analog_f.81b435a8b52a679bf3dc.png",
     "static/media/month_motion_on.jpg": "https://g1azed.github.io/own.io/static/media/month_motion_on.fdc07619d4254e40c5a5.jpg",
     "static/media/people_emotion.gif": "https://g1azed.github.io/own.io/static/media/people_emotion.a09bfdd1404fd738b53c.gif",
     "static/media/break_circle.gif": "https://g1azed.github.io/own.io/static/media/break_circle.8dc09167b449d04c1fd2.gif",
@@ -61,7 +62,7 @@
     "static/media/solution_rest1.png": "https://g1azed.github.io/own.io/static/media/solution_rest1.fdffd4adf8225617d9a0.png",
     "static/media/solution_kit2.png": "https://g1azed.github.io/own.io/static/media/solution_kit2.cd2462a18859de75282a.png",
     "static/media/mainHome_bg8.webp": "https://g1azed.github.io/own.io/static/media/mainHome_bg8.d61904a9f78571a3e79b.webp",
-    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.fc1115b1115d1aa276de.png",
+    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.000bdd84cdcbe796eca9.png",
     "static/media/restingCartImg.png": "https://g1azed.github.io/own.io/static/media/restingCartImg.c889a3d0f31adcfd119d.png",
     "static/media/home_pop_1.png": "https://g1azed.github.io/own.io/static/media/home_pop_1.23f26176d68bf652faa2.png",
     "static/media/est_bg_2.png": "https://g1azed.github.io/own.io/static/media/est_bg_2.a0a3cfbb0a13910b6817.png",
@@ -92,11 +93,11 @@
     "static/media/restingPopup_3.png": "https://g1azed.github.io/own.io/static/media/restingPopup_3.ab64447e3ce299c0bcd9.png",
     "static/media/appservice_bottom.png": "https://g1azed.github.io/own.io/static/media/appservice_bottom.61fc599213d28fc93b56.png",
     "static/media/restingPopup_2.png": "https://g1azed.github.io/own.io/static/media/restingPopup_2.3fb3ab66324e66f9bb17.png",
+    "static/media/typo_ee.png": "https://g1azed.github.io/own.io/static/media/typo_ee.1462fb38146d789dc991.png",
+    "static/media/ChooseMonthBg.png": "https://g1azed.github.io/own.io/static/media/ChooseMonthBg.6c55bc46085e9f228a53.png",
     "static/media/mainHome_bg3.webp": "https://g1azed.github.io/own.io/static/media/mainHome_bg3.04923e5c639b80a00e73.webp",
     "static/media/personal_02.png": "https://g1azed.github.io/own.io/static/media/personal_02.595e8842bcb42f0783da.png",
     "static/media/personal_01.png": "https://g1azed.github.io/own.io/static/media/personal_01.30146ad4880fb360701d.png",
-    "static/media/ChooseMonthBg.png": "https://g1azed.github.io/own.io/static/media/ChooseMonthBg.cf17bbcc64d2527abe4b.png",
-    "static/media/typo_ee.png": "https://g1azed.github.io/own.io/static/media/typo_ee.a1c523576a93e6968bcb.png",
     "static/media/mainHome_bg6.webp": "https://g1azed.github.io/own.io/static/media/mainHome_bg6.c06c4c858217579e9af2.webp",
     "static/media/own_logo_1.png": "https://g1azed.github.io/own.io/static/media/own_logo_1.dbc5ec5f8111a676a61f.png",
     "static/media/metapo_4.png": "https://g1azed.github.io/own.io/static/media/metapo_4.c9742a4e587262be8bec.png",
@@ -115,7 +116,7 @@
     "static/media/ownStar_orange_big.svg": "https://g1azed.github.io/own.io/static/media/ownStar_orange_big.d406e604c45e9789dd95aa92158af539.svg",
     "static/media/ownStar_black.svg": "https://g1azed.github.io/own.io/static/media/ownStar_black.3200f10dece61756b65b9abd5399772b.svg",
     "static/media/ownStar_orange_fill.svg": "https://g1azed.github.io/own.io/static/media/ownStar_orange_fill.c6b845f4ce11e0f30e702b9bed882e2b.svg",
-    "static/media/insightLine3.svg": "https://g1azed.github.io/own.io/static/media/insightLine3.1745dd555d7e093bf1dc280f9ac24ede.svg",
+    "static/media/insightLine3.svg": "https://g1azed.github.io/own.io/static/media/insightLine3.5e4efac58130ae556fea3454dc7d11ed.svg",
     "static/media/insightLine1.svg": "https://g1azed.github.io/own.io/static/media/insightLine1.ca2581a3f34ecd93494da240fcd18602.svg",
     "static/media/insightLine2.svg": "https://g1azed.github.io/own.io/static/media/insightLine2.1af4f76c6c2b7422c6504e3bca4f534c.svg",
     "index.html": "https://g1azed.github.io/own.io/index.html",
@@ -123,12 +124,16 @@
     "static/media/needLine2.svg": "https://g1azed.github.io/own.io/static/media/needLine2.1e3deb2aae1e913f5aac613c103988db.svg",
     "static/media/ownStar_orange_small.svg": "https://g1azed.github.io/own.io/static/media/ownStar_orange_small.235c569fe655e025851f616d20cda20e.svg",
     "static/media/intro_arrow.svg": "https://g1azed.github.io/own.io/static/media/intro_arrow.e61de20842dc5dc13d55e55cddebd01a.svg",
+    "static/media/left_1.svg": "https://g1azed.github.io/own.io/static/media/left_1.b45f2acd5255402c104e9c8100f1112b.svg",
     "static/media/arrow.svg": "https://g1azed.github.io/own.io/static/media/arrow.6e551eaf4b844d7026b1d36d21752706.svg",
+    "static/media/right_3.svg": "https://g1azed.github.io/own.io/static/media/right_3.55b781b1ad93266fc5ce6d105d232775.svg",
+    "static/media/right_1.svg": "https://g1azed.github.io/own.io/static/media/right_1.3b8919e76ca72941b575a63d6bd2ce70.svg",
+    "static/media/right_2.svg": "https://g1azed.github.io/own.io/static/media/right_2.132c2cc39523584c13996aa176b8af62.svg",
     "main.45895189.css.map": "https://g1azed.github.io/own.io/static/css/main.45895189.css.map",
-    "main.4ed90faf.js.map": "https://g1azed.github.io/own.io/static/js/main.4ed90faf.js.map"
+    "main.3acfed40.js.map": "https://g1azed.github.io/own.io/static/js/main.3acfed40.js.map"
   },
   "entrypoints": [
     "static/css/main.45895189.css",
-    "static/js/main.4ed90faf.js"
+    "static/js/main.3acfed40.js"
   ]
 }
