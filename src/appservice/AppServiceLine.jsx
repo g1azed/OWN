@@ -32,10 +32,11 @@ const drawLine_Right = keyframes`
 /* svg component */
 const Left_line = styled(Left_1)`
     position: absolute;
-    top: -14vw;
+    top: -17vw;
     left: 17vw;
+    width: 18.125vw;
     path {
-        stroke-dasharray: 1200;
+        stroke-dasharray: -1200;
         stroke-dashoffset: 0;
         animation: ${(props) => (props.$isVisible ? drawLine_Left : "none")} 1.3s
         ease-in-out 2s forwards;
@@ -43,8 +44,9 @@ const Left_line = styled(Left_1)`
 `
 const Right_line_1 = styled(Right_1)`
     position: absolute;
-    top: -29vw;
+    top: -34vw;
     right: 31vw;
+    width: 7.86vw;
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;
@@ -54,8 +56,9 @@ const Right_line_1 = styled(Right_1)`
 `
 const Right_line_2 = styled(Right_2)`
     position: absolute;
-    top: -27vw;
+    top: -34vw;
     right: 19vw;
+    width: 18.28vw;
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;
@@ -65,8 +68,9 @@ const Right_line_2 = styled(Right_2)`
 `
 const Right_line_3 = styled(Right_3)`
     position: absolute;
-    top: -17vw;
+    top: -21vw;
     right: 19vw;
+    width: 18.28vw;
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;

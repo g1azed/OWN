@@ -30,18 +30,13 @@ import homePop_3 from  '../assets/appservice/home_pop_3.png'
 
 import restingImg from '../assets/appservice/resting_statistic.png'
 import restingCartImg from '../assets/appservice/restingCartImg.png'
-import CartPopupImg1 from '../assets/appservice/restingPopup_1.png'
-import CartPopupImg2 from '../assets/appservice/restingPopup_2.png'
-import CartPopupImg3 from '../assets/appservice/restingPopup_3.png'
 
-// import Month_Motion from '../assets/appservice/month_motion.png'
 import Month_MotionOn from '../assets/appservice/month_motion_on.jpg'
 
 import Statis_img_1 from '../assets/appservice/statis_img_1.png'
 import Statis_img_2 from '../assets/appservice/statis_img_2.png'
 import Statis_img_3 from '../assets/appservice/statis_img_3.png'
 import Statis_bar from '../assets/appservice/statistic_bar.png'
-
 
 import RecordImg from '../assets/appservice/record_img.png'
 import Wish_img_1 from '../assets/appservice/wish_1.png'
@@ -50,6 +45,8 @@ import WishUnion from '../assets/appservice/Union.png'
 import Bottom from '../assets/appservice/appservice_bottom.png'
 
 import AppServiceLine from './AppServiceLine'
+import AppServicePop from './AppservicePop'
+import AppServiceCartPop from './AppServiceCartPop'
 
 
 const AppServiceHome = styled.div`
@@ -312,21 +309,21 @@ const CartWrap = styled.div`
         height: 63vw;
         .animated-bottom {
             animation: ${boxFade} 1.3s linear;
-            transition: bottom 1.3s ease-in-out; /* 부드러운 애니메이션 효과 */
-            bottom: 0; /* 초기 값 */
+            transition: bottom 1.3s ease-in-out;
+            bottom: 0;
         }
         img{ position: absolute; }
         img:nth-child(1){
             width: 17.18vw;
-            left: 15.62vw; // 300px;
+            left: 15.62vw;
         }
         img:nth-child(2){
             width: 17.18vw;
-            left: 7.81vw; // 150px;
+            left: 7.81vw; 
         }
         img:nth-child(3){
             width: 16.71vw;
-            right: 10.4vw; // 200px;
+            right: 10.4vw;
         }
 
     }
@@ -389,19 +386,7 @@ const AppService = () => {
         const imgStyle = {
             transform: isHovered ? 'translateY(-347vw)' : 'translateY(0px)',
             transition: 'transform 8s ease-in-out',
-        };
-
-        /* 스크롤 이벤트 */
-        const scrollY = useScrollEvent();
-
-        // 각 객체의 스크롤 포인트와 bottom 값을 설정합니다.
-        const bottom1 = useAnimateBottom(scrollY, 2858, '0', '14vw'); 
-        const bottom2 = useAnimateBottom(scrollY, 2858, '0', '40vw'); 
-        const bottom3 = useAnimateBottom(scrollY, 2858, '0', '31vw'); 
-
-        const bottom4 = useAnimateBottom(scrollY, 5043, '0', '13.22vw'); 
-        const bottom5 = useAnimateBottom(scrollY, 5043, '0', '25vw'); 
-        const bottom6 = useAnimateBottom(scrollY, 5043, '0', '16.8vw'); 
+        }; 
     
 
         
@@ -501,11 +486,7 @@ const AppService = () => {
                 <AppServiceH2> home </AppServiceH2>
                 <AppServiceH4> 활동중인 키트는 홈화면 일러스트로 진행도 확인이 가능하고, <br/> 여러 알림으로 원활한 활동을 돕습니다. </AppServiceH4>
                 <img src={homeBgImg} className="home_bg"/>
-                <div className="home_popup_wrap">
-                    <img src={homePop_1} className="animated-bottom" style={{ bottom: bottom1 }}/>
-                    <img src={homePop_2} className="animated-bottom" style={{ bottom: bottom2 }} />
-                    <img src={homePop_3} className="animated-bottom" style={{ bottom: bottom3 }} />
-                </div>
+                <AppServicePop />
                 <AppServiceLine />
             </HomeWrap>
             <RestingWrap>
@@ -524,11 +505,7 @@ const AppService = () => {
                 <CartWrap>
                     <AppServiceH2 isBgOrange> resting cart </AppServiceH2>
                     <AppServiceH4 isBgOrange> 진행 완료한 활동은 간단한 후기 작성으로 카드를 <br/> 획득할 수 있습니다. </AppServiceH4>
-                    <div className="resting_cart_img_wrap">
-                        <img src={CartPopupImg1} className="animated-bottom" style={{ bottom: bottom4 }} />
-                        <img src={CartPopupImg2} className="animated-bottom" style={{ bottom: bottom5 }}/>
-                        <img src={CartPopupImg3} className="animated-bottom" style={{ bottom: bottom6 }}/>
-                    </div>
+                    <AppServiceCartPop />
 
                 </CartWrap>
             </RestingWrap>
