@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useRef, useState} from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import {colors, fontSize} from '../styles'
 import useScrollEvent from '../hook/useScrollEvent'
 import useAnimateBottom from '../hook/useAnimateBottom';
@@ -35,6 +35,12 @@ import CartPopupImg2 from '../assets/appservice/restingPopup_2.png'
 import CartPopupImg3 from '../assets/appservice/restingPopup_3.png'
 // import Month_Motion from '../assets/appservice/month_motion.png'
 import Month_MotionOn from '../assets/appservice/month_motion_on.jpg'
+
+import Statis_img_1 from '../assets/appservice/statis_img_1.gif'
+import Statis_img_2 from '../assets/appservice/statis_img_2.gif'
+import Statis_img_3 from '../assets/appservice/statis_img_3.gif'
+import Statis_bar from '../assets/appservice/statistic_bar.png'
+
 
 import RecordImg from '../assets/appservice/record_img.png'
 import Wish_img_1 from '../assets/appservice/wish_1.png'
@@ -202,7 +208,14 @@ const ChooseMonth = styled.div`
     }
     
 `
-
+const boxFade = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+` 
 const HomeWrap = styled.div`
     margin-top: 4.16vw;
     padding: 6.51vw 0 0 0;
@@ -227,6 +240,7 @@ const HomeWrap = styled.div`
             left: 2vw;
             bottom:0;
             transition: bottom 0.5s ease-in-out; 
+            animation: ${boxFade} 0.5s linear;
         }
         img:nth-child(2){
             width: 32.76vw;
@@ -244,34 +258,59 @@ const RestingWrap = styled.div`
 `
 
 const StatisWrap = styled.div`
-    
+    position: relative;
+    .statis_bar{
+        width: 60.88vw;
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+        
+    }
+    .statis_img_wrap{
+        padding: 3.43vw 10.41vw 0 10.41vw;
+        display: flex;
+        gap: 8.95vw;
+        justify-content: space-between;
+        align-items: flex-start;
+        img{
+            width: 20.36vw;
+            object-fit: contain;
+        }
+        img:nth-child(2){
+            margin-top: 8.28vw;
+        }
+        img:nth-child(3){
+            margin-top: 13.02vw;
+        }
+    }
 `
 const CartWrap = styled.div`
-
     padding-top: 9.89vw;
     width: auto;
-    height: 64.3vw;
+
     div.resting_cart_img_wrap{
         z-index: 0;
         background: url(${restingCartImg}) no-repeat;
         background-size: contain;
         background-position: center;
         position: relative;
-        height: 100%;
+        height: 63vw;
+        .animated-bottom {
+            animation: ${boxFade} 1.3s linear;
+            transition: bottom 1.3s ease-in-out; /* 부드러운 애니메이션 효과 */
+            bottom: 0; /* 초기 값 */
+        }
         img{ position: absolute; }
         img:nth-child(1){
             width: 17.18vw;
-            top: 13.22vw; 
             left: 15.62vw; // 300px;
         }
         img:nth-child(2){
             width: 17.18vw;
-            top: 25.25vw;
             left: 7.81vw; // 150px;
         }
         img:nth-child(3){
             width: 16.71vw;
-            top: 16.8vw; // 400px;
             right: 10.4vw; // 200px;
         }
 
@@ -286,6 +325,14 @@ const RecordWrap = styled.div`
         width: 87.08vw;
         display: block;
         margin-left: auto ;
+    }
+`
+const Rotate = keyframes`
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 `
 const WishWrap = styled.div`
@@ -303,14 +350,15 @@ const WishWrap = styled.div`
             left: 12.86vw;
         }
         img:nth-child(2){
+            z-index: 1;
             top: 12.23vw;
             left: 41.66vw;
         }
         img:nth-child(3){
-            z-index: -1;
             width: 26.875vw;
             right: 12.08vw;
             top: 2.7vw;
+            animation: ${Rotate} 7s infinite linear;
         }
     }
 `
@@ -334,9 +382,13 @@ const AppService = () => {
         const scrollY = useScrollEvent();
 
         // 각 객체의 스크롤 포인트와 bottom 값을 설정합니다.
-        const bottom1 = useAnimateBottom(scrollY, 2858, '0', '14vw'); // 첫 번째 객체
-        const bottom2 = useAnimateBottom(scrollY, 2858, '0', '40vw'); // 두 번째 객체
-        const bottom3 = useAnimateBottom(scrollY, 2858, '0', '31vw'); // 세 번째 객체
+        const bottom1 = useAnimateBottom(scrollY, 2858, '0', '14vw'); 
+        const bottom2 = useAnimateBottom(scrollY, 2858, '0', '40vw'); 
+        const bottom3 = useAnimateBottom(scrollY, 2858, '0', '31vw'); 
+
+        const bottom4 = useAnimateBottom(scrollY, 4343, '0', '13.22vw'); 
+        const bottom5 = useAnimateBottom(scrollY, 4343, '0', '25vw'); 
+        const bottom6 = useAnimateBottom(scrollY, 4343, '0', '16.8vw'); 
     
 
         
@@ -447,15 +499,21 @@ const AppService = () => {
                     <AppServiceH2 isBgOrange> My resting <br/> statistics </AppServiceH2>
                     <AppServiceH4 isBgOrange>키트 활동을 하며 얼만큼 효과적으로 <br/>
                     쉬었는지 확인할 수 있습니다. </AppServiceH4>  
-                    <img src={restingImg} />
+                    <img src={Statis_bar} className="statis_bar"/>
+                    <div className="statis_img_wrap">
+                        <img src={Statis_img_1} />
+                        <img src={Statis_img_2} />
+                        <img src={Statis_img_3} />
+                    </div>
+                    
                 </StatisWrap>
                 <CartWrap>
                     <AppServiceH2 isBgOrange> resting cart </AppServiceH2>
                     <AppServiceH4 isBgOrange> 진행 완료한 활동은 간단한 후기 작성으로 카드를 <br/> 획득할 수 있습니다. </AppServiceH4>
                     <div className="resting_cart_img_wrap">
-                            <img src={CartPopupImg1} />
-                            <img src={CartPopupImg2} />
-                            <img src={CartPopupImg3} />
+                            <img src={CartPopupImg1} className="animated-bottom" style={{ bottom: bottom4 }} />
+                            <img src={CartPopupImg2} className="animated-bottom" style={{ bottom: bottom5 }}/>
+                            <img src={CartPopupImg3} className="animated-bottom" style={{ bottom: bottom6 }}/>
                     </div>
                 </CartWrap>
             </RestingWrap>
