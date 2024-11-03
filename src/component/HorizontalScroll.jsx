@@ -1,21 +1,17 @@
-import styled from "styled-components";
-import React, { forwardRef, useRef } from "react";
+import { forwardRef, useRef } from "react";
 import { useHorizontalScroll } from "../hook/useHorizontalScroll";
-
-const ScrollContainer = styled.div`
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 100vw;
-  height: 100vh;
-`;
+import DraggableScroll from "./DraggableScroll";
 
 const HorizontalScroll = forwardRef(({ children }, ref) => {
   const internalRef = useRef(null);
   const scrollRef = ref || internalRef;
   useHorizontalScroll(scrollRef);
 
-  return <ScrollContainer ref={scrollRef}>{children}</ScrollContainer>;
+  return (
+    <DraggableScroll direction="x" ref={scrollRef}>
+      {children}
+    </DraggableScroll>
+  );
 });
 
 export default HorizontalScroll;

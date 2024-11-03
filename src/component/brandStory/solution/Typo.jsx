@@ -9,6 +9,7 @@ import analog from "../../../assets/brandStory/solution_small.png";
 const PADDING = vwCalc(80);
 
 const Section = styled.section`
+  position: relative;
   padding-top: ${vwCalc(200)};
   padding-left: ${PADDING};
   padding-bottom: ${vwCalc(82)};

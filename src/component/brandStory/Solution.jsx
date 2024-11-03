@@ -2,18 +2,21 @@ import styled from "styled-components";
 import Typo from "./solution/Typo";
 import CoreValue from "./solution/CoreValue";
 import Keyword from "./solution/Keyword";
+import DraggableScroll from "../DraggableScroll";
 
-const Section = styled.section`
+const UpperCase = styled.div`
   text-transform: uppercase;
 `;
 
 const Solution = () => {
   return (
-    <Section>
-      <Typo />
-      <CoreValue />
-      <Keyword />
-    </Section>
+    <DraggableScroll direction="y">
+      <UpperCase>
+        <Typo />
+        <CoreValue />
+        <Keyword />
+      </UpperCase>
+    </DraggableScroll>
   );
 };
 

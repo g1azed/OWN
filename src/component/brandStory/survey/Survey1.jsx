@@ -7,7 +7,9 @@ import SurveyTitle from "./SurveyTitle";
 import SurveyInfo from "./SurveyInfo";
 
 const MAIN_ORANGE = colors.mainOrange;
+const BIG_BLACK = colors.bigBlack;
 const GRAY = "#DFDFDF";
+const WHITE = "#FFFFFF";
 
 const Wrapper = styled.div`
   position: relative;
@@ -16,6 +18,18 @@ const Wrapper = styled.div`
 
 const Section = styled.section`
   position: relative;
+  z-index: 1;
+`;
+
+const CompareTypo = styled.span`
+  position: absolute;
+  left: ${(props) => vwCalc(props.$left)};
+  bottom: ${vwCalc(28)};
+  font-family: Pretendard;
+  // font-weight: 200;
+  font-size: ${vwCalc(20)};
+  color: ${(props) => props.$color};
+  text-transform: uppercase;
   z-index: 1;
 `;
 
@@ -109,6 +123,12 @@ const Survey1 = () => {
           participantNum="1,542"
         />
       </Section>
+      <CompareTypo $color={WHITE} $left={870}>
+        after
+      </CompareTypo>
+      <CompareTypo $colors={BIG_BLACK} $left={1528}>
+        before
+      </CompareTypo>
       <RedCircle ref={redCircleRef} $animate={redCircleVisible} />
       <GrayCircle ref={grayCircleRef} $animate={grayCircleVisible} />
     </Wrapper>
