@@ -6,10 +6,10 @@ import useScrollEvent from '../hook/useScrollEvent'
 import useAnimateBottom from '../hook/useAnimateBottom';
 
 import ServiceMainImg from '../assets/appservice/appserv_main.png'
-import personal_01 from '../assets/appservice/personal_1.gif'
-import personal_02 from '../assets/appservice/personal_2.gif'
-import personal_03 from '../assets/appservice/personal_3.gif'
-import personal_04 from '../assets/appservice/personal_4.gif'
+import personal_01 from '../assets/appservice/personal_01.png'
+import personal_02 from '../assets/appservice/personal_02.png'
+import personal_03 from '../assets/appservice/personal_03.png'
+import personal_04 from '../assets/appservice/personal_04.png'
 import ization_arrow from '../assets/appservice/ization_arrow.png'
 import ization_etc from '../assets/appservice/ization_etc.png'
 
@@ -36,9 +36,9 @@ import CartPopupImg3 from '../assets/appservice/restingPopup_3.png'
 // import Month_Motion from '../assets/appservice/month_motion.png'
 import Month_MotionOn from '../assets/appservice/month_motion_on.jpg'
 
-import Statis_img_1 from '../assets/appservice/statis_img_1.gif'
-import Statis_img_2 from '../assets/appservice/statis_img_2.gif'
-import Statis_img_3 from '../assets/appservice/statis_img_3.gif'
+import Statis_img_1 from '../assets/appservice/statis_img_1.png'
+import Statis_img_2 from '../assets/appservice/statis_img_2.png'
+import Statis_img_3 from '../assets/appservice/statis_img_3.png'
 import Statis_bar from '../assets/appservice/statistic_bar.png'
 
 
