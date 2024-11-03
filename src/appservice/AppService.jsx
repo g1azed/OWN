@@ -87,10 +87,11 @@ const AppServiceH2 = styled.h2`
     text-align: center;
 `
 const AppServiceH4 = styled.h4`
-    font-size: ${colors.kSizeText20};
+    font-size: ${fontSize.kSizeText20};
     color: ${ (props) => props.isBgOrange ?  '#ffffff' : colors.smallBlack };
     margin-top: 1.56vw;
     text-align: center;
+    line-height: 1.51vw;
 `
 const PersonalIzation = styled.div`
     display: flex;
@@ -113,7 +114,7 @@ const PersonalIzationImg = styled.div`
         .ization_arrow{ 
             width: 3.69vw;
             position: absolute;
-            top: 6vw; right: -4. 5vw;
+            top: 8.5vw; right: -5vw;
         }
     }
     &:nth-child(4){
@@ -122,9 +123,11 @@ const PersonalIzationImg = styled.div`
             width: 29.1vw;
             position: absolute;
             top: -5vw;
+            left: -4vw;
         }
     }
     p:nth-child(1){
+        color: ${colors.mainOrange};
         font-size: 1.56vw;
         font-weight: 500; 
     }
@@ -134,6 +137,7 @@ const PersonalIzationImg = styled.div`
         margin: 0.26vw 0 1.56vw 0;
     }
     p.recommand_personal{
+        font-size: 1.56vw;
         color: ${colors.mainOrange};
         font-weight: 700;
         margin-bottom: 1.35vw;
@@ -146,6 +150,7 @@ const VariousKitWrap = styled.div`
         text-align: start;
     }
     h5{
+        margin: 4.42vw 0 0.57vw 0;
         font-size: ${fontSize.kSizeHead};
         color: ${colors.smallBlack};
         line-height: 1.96vw;
@@ -219,13 +224,18 @@ const boxFade = keyframes`
 const HomeWrap = styled.div`
     margin-top: 4.16vw;
     padding: 6.51vw 0 0 0;
+    height: 72.13vw;
     background-color: ${colors.mainIvory};
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    h4{
+        padding-bottom: 1.77vw;
+    }
     img.home_bg{
-        width: 79.16vw;
+        width: auto;
+        height: 55.46vw;
     }
     .home_popup_wrap{
         width: 100%;
@@ -423,7 +433,7 @@ const AppService = () => {
                     </PersonalIzationImg>
                     <PersonalIzationImg>
                         <p> 03 </p>
-                        <p> 기본 정보 인식 </p>
+                        <p> 관심 분야 </p>
                         <img src={personal_03} />
                     </PersonalIzationImg>
                     <PersonalIzationImg>
