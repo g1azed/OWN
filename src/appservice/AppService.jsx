@@ -33,6 +33,7 @@ import restingCartImg from '../assets/appservice/restingCartImg.png'
 import CartPopupImg1 from '../assets/appservice/restingPopup_1.png'
 import CartPopupImg2 from '../assets/appservice/restingPopup_2.png'
 import CartPopupImg3 from '../assets/appservice/restingPopup_3.png'
+
 // import Month_Motion from '../assets/appservice/month_motion.png'
 import Month_MotionOn from '../assets/appservice/month_motion_on.jpg'
 
@@ -47,6 +48,8 @@ import Wish_img_1 from '../assets/appservice/wish_1.png'
 import Wish_img_2 from '../assets/appservice/wish_2.png'
 import WishUnion from '../assets/appservice/Union.png'
 import Bottom from '../assets/appservice/appservice_bottom.png'
+
+import AppServiceLine from './AppServiceLine'
 
 
 const AppServiceHome = styled.div`
@@ -262,6 +265,8 @@ const HomeWrap = styled.div`
         }
     }
 `
+
+
 const RestingWrap = styled.div`
     padding-top : 6.92vw;
     background-color: ${colors.mainOrange};
@@ -372,8 +377,6 @@ const WishWrap = styled.div`
         }
     }
 `
-
-
 
 
 const AppService = () => {
@@ -503,6 +506,7 @@ const AppService = () => {
                     <img src={homePop_2} className="animated-bottom" style={{ bottom: bottom2 }} />
                     <img src={homePop_3} className="animated-bottom" style={{ bottom: bottom3 }} />
                 </div>
+                <AppServiceLine />
             </HomeWrap>
             <RestingWrap>
                 <StatisWrap>
@@ -521,10 +525,11 @@ const AppService = () => {
                     <AppServiceH2 isBgOrange> resting cart </AppServiceH2>
                     <AppServiceH4 isBgOrange> 진행 완료한 활동은 간단한 후기 작성으로 카드를 <br/> 획득할 수 있습니다. </AppServiceH4>
                     <div className="resting_cart_img_wrap">
-                            <img src={CartPopupImg1} className="animated-bottom" style={{ bottom: bottom4 }} />
-                            <img src={CartPopupImg2} className="animated-bottom" style={{ bottom: bottom5 }}/>
-                            <img src={CartPopupImg3} className="animated-bottom" style={{ bottom: bottom6 }}/>
+                        <img src={CartPopupImg1} className="animated-bottom" style={{ bottom: bottom4 }} />
+                        <img src={CartPopupImg2} className="animated-bottom" style={{ bottom: bottom5 }}/>
+                        <img src={CartPopupImg3} className="animated-bottom" style={{ bottom: bottom6 }}/>
                     </div>
+
                 </CartWrap>
             </RestingWrap>
             <RecordWrap>
