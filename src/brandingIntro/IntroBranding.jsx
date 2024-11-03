@@ -408,7 +408,6 @@ const OwnMetapo = styled.div`
         img{
             max-width: 15.88vw;
             transition: transform 1.5s ease-in-out;
-           
         }    
 
     }
