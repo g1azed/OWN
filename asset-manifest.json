@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://g1azed.github.io/own.io/static/css/main.45895189.css",
-    "main.js": "https://g1azed.github.io/own.io/static/js/main.47c641f4.js",
+    "main.js": "https://g1azed.github.io/own.io/static/js/main.a2f65e05.js",
     "static/media/analog_final.png": "https://g1azed.github.io/own.io/static/media/analog_final.51881278b922f7caceea.png",
     "static/media/people_emotion.gif": "https://g1azed.github.io/own.io/static/media/people_emotion.a09bfdd1404fd738b53c.gif",
     "static/media/break_circle.gif": "https://g1azed.github.io/own.io/static/media/break_circle.8dc09167b449d04c1fd2.gif",
@@ -116,10 +116,10 @@
     "static/media/intro_arrow.svg": "https://g1azed.github.io/own.io/static/media/intro_arrow.e61de20842dc5dc13d55e55cddebd01a.svg",
     "static/media/arrow.svg": "https://g1azed.github.io/own.io/static/media/arrow.6e551eaf4b844d7026b1d36d21752706.svg",
     "main.45895189.css.map": "https://g1azed.github.io/own.io/static/css/main.45895189.css.map",
-    "main.47c641f4.js.map": "https://g1azed.github.io/own.io/static/js/main.47c641f4.js.map"
+    "main.a2f65e05.js.map": "https://g1azed.github.io/own.io/static/js/main.a2f65e05.js.map"
   },
   "entrypoints": [
     "static/css/main.45895189.css",
-    "static/js/main.47c641f4.js"
+    "static/js/main.a2f65e05.js"
   ]
 }
