@@ -386,9 +386,9 @@ const AppService = () => {
         const bottom2 = useAnimateBottom(scrollY, 2858, '0', '40vw'); 
         const bottom3 = useAnimateBottom(scrollY, 2858, '0', '31vw'); 
 
-        const bottom4 = useAnimateBottom(scrollY, 4343, '0', '13.22vw'); 
-        const bottom5 = useAnimateBottom(scrollY, 4343, '0', '25vw'); 
-        const bottom6 = useAnimateBottom(scrollY, 4343, '0', '16.8vw'); 
+        const bottom4 = useAnimateBottom(scrollY, 5043, '0', '13.22vw'); 
+        const bottom5 = useAnimateBottom(scrollY, 5043, '0', '25vw'); 
+        const bottom6 = useAnimateBottom(scrollY, 5043, '0', '16.8vw'); 
     
 
         
