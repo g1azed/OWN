@@ -66,8 +66,8 @@ const MainButton = styled.button`
     justify-content: center;
     align-items: center;
     img{
-        width: 6vh;
-        height: 6vh;
+        width: 6vw;
+        height: 6vw;
     }
 `
 const MainTextWrap = styled.div`
@@ -126,29 +126,25 @@ const CoreValueText = styled.div`
     }
 `
 const CoreValueImg = styled.div`
-    /* padding: 0 6.8vw; */
+    margin-top: 6.61vw;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.56vw;
     div{
+        background-color: #f4f4f4;
+        padding: 24.8vw 0 1.35vw 1.8vw;
         width: 27.7vw;
         height: 29.1vw;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
-        position: relative;
         span{
             font-size: ${fontSize.kSizeText20};
-            position: absolute;
-            bottom: 1.9vw;
-            // 정확한 마진을 피그마에서 알수없어서 일단 보류
         }
         p{
             font-size: 1.66vw;
             font-weight: 500;
-            position: absolute;
-            bottom: 0;
         }
     }
 `
@@ -159,6 +155,7 @@ const HeadNum = styled.h4`
 `
 
 const HeadText = styled.h4`
+    white-space: nowrap;
     font-size: ${fontSize.introHead};
     line-height: 120%;
     font-weight: 600;
@@ -364,6 +361,7 @@ const OwnLogoText = styled.div`
 const OwnLogoImgWrap = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    img{ height: 100%; object-fit: cover;}
     img:nth-child(5){
         grid-column: 1 / span 2;
     }
@@ -379,6 +377,7 @@ const OwnMetapoText = styled.div`
     padding: 0 4.79vw;
 `
 const OwnMetapo = styled.div`
+    margin-top: 4.79vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.93vw;
@@ -424,9 +423,11 @@ const OwnMockWrap = styled.div`
     margin-top: 0.88vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0.93vw;
     img:nth-child(1), img:nth-child(4){
         grid-column: 1 / span 2;
     }
+    img{ height: 100%; object-fit: cover;}
 `
 
 

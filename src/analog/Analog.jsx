@@ -1,5 +1,6 @@
 import React from 'react';
-import AnalogImg from '../assets/analog/analog_final.png'
+import AnalogImg1 from '../assets/analog/analog_f.png'
+import AnalogImg2 from '../assets/analog/analog_f2.png'
 import styled from 'styled-components'
 
 const AnalogWrap = styled.div`
@@ -12,7 +13,8 @@ const AnalogWrap = styled.div`
 const Analog = () => {
     return (
         <AnalogWrap>
-            <img src={AnalogImg} />
+            <img src={AnalogImg1} />
+            <img src={AnalogImg2} />
         </AnalogWrap>
     );
 };
