@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://g1azed.github.io/own"
+    "homepage": "https://g1azed.github.io/own.io"
   },
   "eslintConfig": {
     "extends": [
