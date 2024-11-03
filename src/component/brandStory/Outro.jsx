@@ -6,6 +6,8 @@ import { BasePoppins100 } from "../style/BasePoppins";
 import { BasePretendard26 } from "../style/BasePretendard";
 import ImgBox from "../ImgBox";
 import branding from "../../assets/brandStory/outro_branding.png";
+import service from "../../assets/brandStory/outro_appservice.png";
+import analog from "../../assets/brandStory/outro_analog.png";
 import arrow from "../../assets/icon/arrow.svg";
 
 const Section = styled.section`
@@ -28,6 +30,7 @@ const Pretendard28 = styled(BasePretendard26)`
   margin-top: ${vwCalc(18)};
   font-family: Pretendard;
   font-size: ${vwCalc(28)};
+  line-height: 1.5;
 `;
 
 const ScrollTopButton = styled.button`
@@ -56,7 +59,7 @@ const SquareLink = styled(BaseShape).attrs({
   padding-top: ${vwCalc(215)};
   width: ${vwCalc(568)};
   height: ${vwCalc(473)};
-  font-weight: 400;
+  font-weight: 600;
   background: ${(props) => props.$background};
   border-radius: ${vwCalc(33)};
   text-align: center;
@@ -73,7 +76,7 @@ const Outro = ({ scrollToTop }) => {
         <Pretendard28>
           바쁘게 흘러가는 현대 사회 속 사람들은 점점 휴식의 중요성을 <br />
           잊어버리게 되었습니다. 우리 OWN은 사람들이 부족한 시간 속에서 <br />
-          조금이라도 제대로 쉬며 휴식의 중요성을 전달합니다.
+          제대로 된 휴식을 취할 수 있도록, 휴식의 중요성을 전달합니다.
         </Pretendard28>
       </Flex>
 
@@ -86,10 +89,10 @@ const Outro = ({ scrollToTop }) => {
         <SquareLink to="/introbranding" $background={`url(${branding})`}>
           branding
         </SquareLink>
-        <SquareLink to="/service" $background={colors.mainBlue}>
+        <SquareLink to="/appservice" $background={`url(${service})`}>
           service
         </SquareLink>
-        <SquareLink to="/analog" $background={colors.mainOrange}>
+        <SquareLink to="/analog" $background={`url(${analog})`}>
           analog
         </SquareLink>
       </Flex>
