@@ -19,7 +19,7 @@ import Typo_E from '../assets/brandingIntro/typo_e.png'
 import Typo_Kimg from '../assets/brandingIntro/typo_kk.png'
 import Typo_Eimg from '../assets/brandingIntro/typo_ee.png'
 import Intro_logo from '../assets/brandingIntro/Intro_logo.png'
-import Own_logo_1 from '../assets/brandingIntro/own_logo_1.png'
+import Own_logo_1 from '../assets/brandingIntro/own_logo_1.gif'
 import Own_logo_2 from '../assets/brandingIntro/own_logo_2.png'
 import Own_logo_3 from '../assets/brandingIntro/own_logo_3.png'
 import Own_logo_4 from '../assets/brandingIntro/own_logo_4.png'
@@ -132,7 +132,7 @@ const CoreValueImg = styled.div`
     align-items: center;
     gap: 1.56vw;
     div{
-        background-color: #f4f4f4;
+        background-color: #faf4f4;
         padding: 24.8vw 0 1.35vw 1.8vw;
         width: 27.7vw;
         height: 29.1vw;
@@ -292,7 +292,7 @@ const OwnTypo = styled.div`
     }
     div:nth-child(1){
         background-image: url(${Typo_K});
-        background-size: contain;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -362,6 +362,15 @@ const OwnLogoImgWrap = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     img{ height: 100%; object-fit: cover;}
+    div{
+        width:100%; height: 100%;
+        background: ${colors.mainIvory};
+    }
+    img:nth-child(1){
+        width: 50vw;
+        height: auto; object-fit: contain;
+        margin: 20vw auto;
+    }
     img:nth-child(5){
         grid-column: 1 / span 2;
     }
@@ -563,7 +572,10 @@ const IntroBranding = () => {
                 </OwnLogoText>
                 <div className="own_logo_intro"> </div>
                 <OwnLogoImgWrap>
-                    <img src={Own_logo_1} />
+                    <div>
+                        <img src={Own_logo_1} />    
+                    </div>
+
                     <img src={Own_logo_2} />
                     <img src={Own_logo_3} />
                     <img src={Own_logo_4} />
