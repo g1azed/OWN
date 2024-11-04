@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "https://g1azed.github.io/own.io/static/css/main.45895189.css",
-    "main.js": "https://g1azed.github.io/own.io/static/js/main.700abceb.js",
+    "main.js": "https://g1azed.github.io/own.io/static/js/main.95cb98e6.js",
     "static/media/analog_f2.png": "https://g1azed.github.io/own.io/static/media/analog_f2.5f00051234acd5031582.png",
     "static/media/analog_f.png": "https://g1azed.github.io/own.io/static/media/analog_f.81b435a8b52a679bf3dc.png",
-    "static/media/month_motion_on.jpg": "https://g1azed.github.io/own.io/static/media/month_motion_on.fdc07619d4254e40c5a5.jpg",
+    "static/media/month_motion_on.jpg": "https://g1azed.github.io/own.io/static/media/month_motion_on.1f22ac8c76c095d6e84d.jpg",
     "static/media/own_logo_1.gif": "https://g1azed.github.io/own.io/static/media/own_logo_1.b1f7ea7e55b90dab8923.gif",
     "static/media/people_emotion.gif": "https://g1azed.github.io/own.io/static/media/people_emotion.a09bfdd1404fd738b53c.gif",
     "static/media/break_circle.gif": "https://g1azed.github.io/own.io/static/media/break_circle.8dc09167b449d04c1fd2.gif",
@@ -19,6 +19,7 @@
     "static/media/personal_01.gif": "https://g1azed.github.io/own.io/static/media/personal_01.300a6d3417b89d7327e2.gif",
     "static/media/solution_big.png": "https://g1azed.github.io/own.io/static/media/solution_big.00dac4e1129c55f66969.png",
     "static/media/OwnColorBg_4.png": "https://g1azed.github.io/own.io/static/media/OwnColorBg_4.20e441632e8eb4cbf6e7.png",
+    "static/media/wish_1.gif": "https://g1azed.github.io/own.io/static/media/wish_1.2035440b6ca8131f225f.gif",
     "static/media/tiredRelax.png": "https://g1azed.github.io/own.io/static/media/tiredRelax.5f9cae07e30d68b1f301.png",
     "static/media/own_logo_2.png": "https://g1azed.github.io/own.io/static/media/own_logo_2.87771691e4f81dcfd99a.png",
     "static/media/graph_circle.gif": "https://g1azed.github.io/own.io/static/media/graph_circle.1b866600ed400d536fad.gif",
@@ -67,13 +68,12 @@
     "static/media/solution_rest1.png": "https://g1azed.github.io/own.io/static/media/solution_rest1.fdffd4adf8225617d9a0.png",
     "static/media/solution_kit2.png": "https://g1azed.github.io/own.io/static/media/solution_kit2.cd2462a18859de75282a.png",
     "static/media/mainHome_bg8.webp": "https://g1azed.github.io/own.io/static/media/mainHome_bg8.d61904a9f78571a3e79b.webp",
-    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.b18e1f10269b3f11f15b.png",
+    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.b988386326c8e1e1ab4a.png",
     "static/media/restingCartImg.png": "https://g1azed.github.io/own.io/static/media/restingCartImg.c889a3d0f31adcfd119d.png",
     "static/media/home_pop_1.png": "https://g1azed.github.io/own.io/static/media/home_pop_1.23f26176d68bf652faa2.png",
     "static/media/est_bg_2.png": "https://g1azed.github.io/own.io/static/media/est_bg_2.a0a3cfbb0a13910b6817.png",
     "static/media/est_bg_1.png": "https://g1azed.github.io/own.io/static/media/est_bg_1.80460dfeb3af7afc2b98.png",
     "static/media/paper2.png": "https://g1azed.github.io/own.io/static/media/paper2.1fe56f41ff7548d67123.png",
-    "static/media/wish_1.png": "https://g1azed.github.io/own.io/static/media/wish_1.42f67a8b76832583ff1d.png",
     "static/media/own_insta.png": "https://g1azed.github.io/own.io/static/media/own_insta.94a6ae8502d31f64d2da.png",
     "static/media/Poppins-SemiBold.woff": "https://g1azed.github.io/own.io/static/media/Poppins-SemiBold.07608aed0ae659b64793.woff",
     "static/media/Poppins-Medium.woff": "https://g1azed.github.io/own.io/static/media/Poppins-Medium.7e588a26bdac2428f240.woff",
@@ -130,10 +130,10 @@
     "static/media/right_1.svg": "https://g1azed.github.io/own.io/static/media/right_1.3b8919e76ca72941b575a63d6bd2ce70.svg",
     "static/media/right_2.svg": "https://g1azed.github.io/own.io/static/media/right_2.132c2cc39523584c13996aa176b8af62.svg",
     "main.45895189.css.map": "https://g1azed.github.io/own.io/static/css/main.45895189.css.map",
-    "main.700abceb.js.map": "https://g1azed.github.io/own.io/static/js/main.700abceb.js.map"
+    "main.95cb98e6.js.map": "https://g1azed.github.io/own.io/static/js/main.95cb98e6.js.map"
   },
   "entrypoints": [
     "static/css/main.45895189.css",
-    "static/js/main.700abceb.js"
+    "static/js/main.95cb98e6.js"
   ]
 }
