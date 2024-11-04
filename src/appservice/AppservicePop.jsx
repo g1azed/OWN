@@ -27,7 +27,7 @@ const AppservicePop = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const triggerPosition = window.innerHeight * 1.1;
+            const triggerPosition = window.innerHeight * 1.3;
             const elementPosition = document.querySelector('.home_popup_wrap')?.getBoundingClientRect().top;
     
             if (elementPosition < triggerPosition) {
