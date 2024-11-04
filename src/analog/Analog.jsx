@@ -8,6 +8,9 @@ const AnalogWrap = styled.div`
     img{
         width: 100vw;
     }
+    img:nth-child(2){
+        padding-bottom: 18.9vw;
+    }
 `
 
 const Analog = () => {
