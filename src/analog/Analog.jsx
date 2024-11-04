@@ -7,8 +7,6 @@ const AnalogWrap = styled.div`
     width: 100vw;
     img{
         width: 100vw;
-    }
-    img:nth-child(2){
         padding-bottom: 18.9vw;
     }
 `

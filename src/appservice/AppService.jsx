@@ -18,7 +18,7 @@ import kit_1 from '../assets/appservice/kit_1.png'
 import kit_2 from '../assets/appservice/kit_2.png'
 import kit_3 from '../assets/appservice/kit_3.png'
 import kit_4 from '../assets/appservice/kit_4.png'
-// import kit_5 from '../assets/appservice/kit_5.png'
+import kit_5 from '../assets/appservice/kit_5.png'
 import kit_6 from '../assets/appservice/kit_6.png'
 
 import ChooseMonthBg from '../assets/appservice/ChooseMonthBg.png'
@@ -39,7 +39,7 @@ import Statis_img_3 from '../assets/appservice/statis_img_3.png'
 import Statis_bar from '../assets/appservice/statistic_bar.png'
 
 import RecordImg from '../assets/appservice/record_img.png'
-import Wish_img_1 from '../assets/appservice/wish_1.png'
+import Wish_img_1 from '../assets/appservice/wish_1.gif'
 import Wish_img_2 from '../assets/appservice/wish_2.png'
 import WishUnion from '../assets/appservice/Union.png'
 import Bottom from '../assets/appservice/appservice_bottom.png'
@@ -172,6 +172,10 @@ const VariousTypes = styled.div`
         gap: 2.33vw;
         div{
             text-align: center;
+            img{
+                width: 5.26vw;
+                margin-bottom: 1.25vw;
+            }
         }
     }
 `
@@ -446,18 +450,18 @@ const AppService = () => {
                         </div>
                         <div> 
                             <img src={kit_2} />
+                            <span> CREATE </span>
+                        </div>
+                        <div> 
+                            <img src={kit_4} />
                             <span> VACTION </span>
                         </div>
                         <div> 
                             <img src={kit_3} />
-                            <span> CREATIVE </span>
-                        </div>
-                        <div> 
-                            <img src={kit_4} />
                             <span> GAME </span>
                         </div>
                         <div> 
-                            <img src={kit_4} />
+                            <img src={kit_5} />
                             <span> ONE DAY </span>
                         </div>
                         <div> 

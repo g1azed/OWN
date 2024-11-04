@@ -39,7 +39,7 @@ const AppServiceCartPop = () => {
     
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-        }, []);
+    }, []);
 
 
     return (
@@ -49,12 +49,12 @@ const AppServiceCartPop = () => {
                 visibleBottom="31.56vw" 
                 hiddenBottom="0px"
             />
-            <CartImg src={CartPopupImg1} 
+            <CartImg src={CartPopupImg2} 
                 isVisible={isVisible} 
                 visibleBottom="11.4vw" 
                 hiddenBottom="0px"
             />
-            <CartImg src={CartPopupImg1} 
+            <CartImg src={CartPopupImg3} 
                 isVisible={isVisible} 
                 visibleBottom="13.95vw" 
                 hiddenBottom="0px"

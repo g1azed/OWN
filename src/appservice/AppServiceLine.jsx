@@ -14,32 +14,37 @@ const Wrap = styled.div`
 `
 const drawLine_Left = keyframes`
     from {
+        opacity:0;
         stroke-dashoffset: -1200;
     }
     to {
+        opacity:1;
         stroke-dashoffset: 0;
     }
 `;
 const drawLine_Right = keyframes`
     from {
+        opacity:0;
         stroke-dashoffset: 1200;
     }
     to {
+        opacity:1;
         stroke-dashoffset: 0;
     }
 `;
 
 /* svg component */
 const Left_line = styled(Left_1)`
+
     position: absolute;
     top: -17vw;
     left: 17vw;
     width: 18.125vw;
     path {
-        stroke-dasharray: -1200;
+        stroke-dasharray: 1200;
         stroke-dashoffset: 0;
-        animation: ${(props) => (props.$isVisible ? drawLine_Left : "none")} 1.3s
-        ease-in-out 2s forwards;
+        animation: ${(props) => (props.$isVisible ? drawLine_Left : "none")} 
+        1.3s ease-in-out 0.1s forwards;
     }
 `
 const Right_line_1 = styled(Right_1)`
@@ -50,8 +55,8 @@ const Right_line_1 = styled(Right_1)`
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;
-        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 1.3s
-        ease-in-out 2s forwards;
+        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 
+        1.3s ease-in-out  0.1s forwards;
     }
 `
 const Right_line_2 = styled(Right_2)`
@@ -62,8 +67,8 @@ const Right_line_2 = styled(Right_2)`
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;
-        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 1.7s
-        ease-in-out 2s forwards;
+        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 
+        1.3s ease-in-out 0.1s forwards;
     }
 `
 const Right_line_3 = styled(Right_3)`
@@ -74,8 +79,8 @@ const Right_line_3 = styled(Right_3)`
     path {
         stroke-dasharray: 1200;
         stroke-dashoffset: 0;
-        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 2s
-        ease-in-out 2s forwards;
+        animation: ${(props) => (props.$isVisible ? drawLine_Right : "none")} 
+        1.3s ease-in-out 0.1s forwards;
     }
 `
 const AppServiceLine = () => {
@@ -84,8 +89,10 @@ const AppServiceLine = () => {
 
     const ref = useIntersectionObserverRef({
         callback: () => setIsVisible(true),
-        options: { threshold: 1 },
+        options: { threshold: 0.1 },
     });
+
+    
 
     return (
         <Wrap ref={ref}>
