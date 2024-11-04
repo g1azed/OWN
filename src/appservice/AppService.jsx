@@ -6,10 +6,10 @@ import useScrollEvent from '../hook/useScrollEvent'
 import useAnimateBottom from '../hook/useAnimateBottom';
 
 import ServiceMainImg from '../assets/appservice/appserv_main.png'
-import personal_01 from '../assets/appservice/personal_01.png'
-import personal_02 from '../assets/appservice/personal_02.png'
-import personal_03 from '../assets/appservice/personal_03.png'
-import personal_04 from '../assets/appservice/personal_04.png'
+import personal_01 from '../assets/appservice/personal_01.gif'
+import personal_02 from '../assets/appservice/personal_02.gif'
+import personal_03 from '../assets/appservice/personal_03.gif'
+import personal_04 from '../assets/appservice/personal_04.gif'
 import ization_arrow from '../assets/appservice/ization_arrow.png'
 import ization_etc from '../assets/appservice/ization_etc.png'
 
@@ -385,7 +385,7 @@ const AppService = () => {
         // 마우스 오버 상태에 따른 translateY 설정
         const imgStyle = {
             transform: isHovered ? 'translateY(-347vw)' : 'translateY(0px)',
-            transition: 'transform 8s ease-in-out',
+            transition: 'transform 14s ease-in',
         }; 
     
 
