@@ -185,6 +185,7 @@ const TiredLifeRelaxWrap = styled.div`
         line-height: 9.06vw;
         text-align: right;
         font-weight: 500;
+        white-space: nowrap;
         span{
             font-size: 6.25vw; 
             margin-right: 4.47vw;
