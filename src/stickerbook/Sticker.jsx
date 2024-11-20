@@ -46,7 +46,7 @@ const DisplayGrid = styled.div`
 
 const StickerBoxWrap = styled.div`
     display: flex;
-    margin: 9.21vw 5.67vw 0  5.67vw;
+    margin: 9.21vw 5.67vw 1vw 5.67vw;
 `
 
 const ObjWrap = styled.div`
@@ -55,11 +55,14 @@ const ObjWrap = styled.div`
 
 const RecWrap = styled.div`
     position: fixed;
+    width: 33.33vw;
+    min-height: 79.62vh;
     right: 5.67vw;
     overflow: hidden;
     section{
         background-color: ${colors.mainIvory};
         width: 33.125vw;
+        max-height : 68.61vh;
         height: 38.54vw;
         overflow: hidden;
     }
