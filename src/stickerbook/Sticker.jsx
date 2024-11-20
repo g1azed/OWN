@@ -9,6 +9,8 @@ import { Sticker_BL1, Sticker_BL2, Sticker_BL3, Sticker_BL4, Sticker_BL5, Sticke
 from './StickerImg'
 
 import Moveable from "react-moveable";
+import html2canvas from 'html2canvas';
+import FileSaver from './FileSaver';
 
 const CategoryText = styled.p`
     font-size: 1.45vw;
@@ -44,7 +46,7 @@ const DisplayGrid = styled.div`
 
 const StickerBoxWrap = styled.div`
     display: flex;
-    margin: 9.21vw 5.67vw 8.69vw 5.67vw;
+    margin: 9.21vw 5.67vw 0  5.67vw;
 `
 
 const ObjWrap = styled.div`
@@ -170,6 +172,26 @@ const Sticker = () => {
     // section 영역 ref
     const sectionRef = useRef(null);
 
+    // save
+    const captureRef = useRef();
+
+    const handleSaveAsPng = async () => {
+        if (captureRef.current) {
+            try {
+                const canvas = await html2canvas(captureRef.current);
+                const dataURL = canvas.toDataURL("image/png");
+
+                // 다운로드 링크 생성
+                const link = document.createElement("a");
+                link.href = dataURL;
+                link.download = "capture.png";
+                link.click();
+            } catch (error) {
+                console.error("Error capturing the element:", error);
+            }
+        }
+    };
+
 
     return (
         <StickerBoxWrap>
@@ -262,7 +284,7 @@ const Sticker = () => {
                     </DisplayGrid>
                 </div>
             </ObjWrap>
-            <RecWrap>
+            <RecWrap ref={captureRef}>
                 <section
                     ref={sectionRef} 
                     onMouseDown={handleDeselect}
@@ -314,16 +336,12 @@ const Sticker = () => {
                                     />
                                     
                             </div>
-
-                            
-                            
-                            
                         ))}
 
                 </section>
                 <div className="btn_wrap"> 
                     <ResetBtn> Reset </ResetBtn>
-                    <CraftingBtn> Crafting </CraftingBtn>
+                    <CraftingBtn  onClick={handleSaveAsPng}> Crafting </CraftingBtn>
                 </div>
             </RecWrap>
         </StickerBoxWrap>
