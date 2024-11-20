@@ -56,13 +56,19 @@ const ObjWrap = styled.div`
 const RecWrap = styled.div`
     position: fixed;
     width: 33.33vw;
-    min-height: 79.62vh;
+    /* min-height: 79.62vh; */
     right: 5.67vw;
-    overflow: hidden;
+    overflow:hidden;
+    div.drawbox{
+        overflow:hidden;
+        width: 33.125vw;
+        /* max-height : 68.61vh; */
+        height: 38.54vw;
+    }
     section{
         background-color: ${colors.mainIvory};
         width: 33.125vw;
-        max-height : 68.61vh;
+        /* max-height : 68.61vh; */
         height: 38.54vw;
         overflow: hidden;
     }
@@ -71,10 +77,15 @@ const RecWrap = styled.div`
         display: flex;
         gap: 1.45vw;
     }
-    div.resizing_box{
-        border: 1px solid black;
-
-    }
+`
+const BtnWrap = styled.div`
+    position: fixed;
+    width: 33.33vw;
+    /* min-height: 79.62vh; */
+    right: 5.67vw;
+    top: 50vw;
+    display: flex;
+    gap: 1.45vw;
 `
 
 const ResetBtn = styled.button`
@@ -287,11 +298,13 @@ const Sticker = () => {
                     </DisplayGrid>
                 </div>
             </ObjWrap>
-            <RecWrap ref={captureRef}>
-                <section
-                    ref={sectionRef} 
-                    onMouseDown={handleDeselect}
-                >
+            <RecWrap>   
+                <section>
+                    <div className="drawbox"
+                        ref={sectionRef}
+                        ref={captureRef}
+                        onMouseDown={handleDeselect}
+                    >
                         {selectedImages.map((img) => (
                             <div
                                 key={img.id}
@@ -323,30 +336,31 @@ const Sticker = () => {
                                 }}
                             /> 
                             )}      
-                                    <DraggableImg
-                                        key={img.id}
-                                        src={img.src}
-                                        alt="Selected Sticker"
-                                        style={{
-                                            width: "100px",
-                                            height: "100px",
+                                <DraggableImg
+                                    key={img.id}
+                                    src={img.src}
+                                    alt="Selected Sticker"
+                                    style={{
+                                        width: "100px",
+                                        height: "100px",
 
-                                        }}
-                                        ref={(el) => (refs.current[img.id] = el)} // 각 이미지를 고유 ref로 연결
-                                        rotate={img.rotate}
-                                        onMouseDown={(e) => handleMouseDown(img.id, e)}
-                                        onClick={(e) => e.stopPropagation()} // 이미지 클릭 시 이벤트 전파 중지
-                                    />
+                                    }}
+                                    ref={(el) => (refs.current[img.id] = el)} // 각 이미지를 고유 ref로 연결
+                                    rotate={img.rotate}
+                                    onMouseDown={(e) => handleMouseDown(img.id, e)}
+                                    onClick={(e) => e.stopPropagation()} // 이미지 클릭 시 이벤트 전파 중지
+                                />
                                     
                             </div>
                         ))}
 
+                        </div>
                 </section>
-                <div className="btn_wrap"> 
+            </RecWrap>
+            <BtnWrap> 
                     <ResetBtn> Reset </ResetBtn>
                     <CraftingBtn  onClick={handleSaveAsPng}> Crafting </CraftingBtn>
-                </div>
-            </RecWrap>
+            </BtnWrap>
         </StickerBoxWrap>
     );
 };
