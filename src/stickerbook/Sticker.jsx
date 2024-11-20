@@ -117,6 +117,11 @@ const Sticker = () => {
     const [selectedImages, setSelectedImages] = useState([]);
     const [selectedId, setSelectedId] = useState(null); // 현재 선택된 이미지의 id를 저장
 
+    // reset
+    const handleReset = () => {
+        setSelectedImages([]); // 모든 이미지 제거
+    };
+
     // 이미지 클릭 시 <RecWrap>의 <section>에 추가
     const handleImageClick = (src) => {
         setSelectedImages((prevImages) => [
@@ -358,7 +363,7 @@ const Sticker = () => {
                 </section>
             </RecWrap>
             <BtnWrap> 
-                    <ResetBtn> Reset </ResetBtn>
+                    <ResetBtn onClick={handleReset}> Reset </ResetBtn>
                     <CraftingBtn  onClick={handleSaveAsPng}> Crafting </CraftingBtn>
             </BtnWrap>
         </StickerBoxWrap>
