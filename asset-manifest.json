@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://g1azed.github.io/own.io/static/css/main.45895189.css",
-    "main.js": "https://g1azed.github.io/own.io/static/js/main.f03c9d42.js",
+    "main.js": "https://g1azed.github.io/own.io/static/js/main.1010756a.js",
     "static/media/analog_f2.png": "https://g1azed.github.io/own.io/static/media/analog_f2.5f00051234acd5031582.png",
     "static/media/analog_f.png": "https://g1azed.github.io/own.io/static/media/analog_f.81b435a8b52a679bf3dc.png",
     "static/media/month_motion_on.jpg": "https://g1azed.github.io/own.io/static/media/month_motion_on.1f22ac8c76c095d6e84d.jpg",
@@ -190,10 +190,10 @@
     "static/media/right_1.svg": "https://g1azed.github.io/own.io/static/media/right_1.3b8919e76ca72941b575a63d6bd2ce70.svg",
     "static/media/right_2.svg": "https://g1azed.github.io/own.io/static/media/right_2.132c2cc39523584c13996aa176b8af62.svg",
     "main.45895189.css.map": "https://g1azed.github.io/own.io/static/css/main.45895189.css.map",
-    "main.f03c9d42.js.map": "https://g1azed.github.io/own.io/static/js/main.f03c9d42.js.map"
+    "main.1010756a.js.map": "https://g1azed.github.io/own.io/static/js/main.1010756a.js.map"
   },
   "entrypoints": [
     "static/css/main.45895189.css",
-    "static/js/main.f03c9d42.js"
+    "static/js/main.1010756a.js"
   ]
 }
