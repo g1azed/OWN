@@ -3,9 +3,9 @@ import vwCalc from "../../util/vwCalc";
 import { colors, fontSize } from "../../styles";
 
 const fontSizes = {
-  small: `clamp(8px, ${fontSize.kSizeText20}, 20px)`,
-  medium: `clamp(14px, ${fontSize.kSizeHead}, 26px)`,
-  large: `clamp(23px, ${vwCalc(35)}, 35px)`,
+  small: fontSize.kSizeText20,
+  medium: fontSize.kSizeHead,
+  large: vwCalc(35),
 };
 
 export const BasePretendard = styled.p`
