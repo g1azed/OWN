@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { colors, fontSize } from "../../styles";
 
 const fontSizes = {
-  small: `clamp(20px, ${fontSize.eSizeText}, 100px)`,
-  large: `clamp(70px, ${fontSize.eSizeHead}, 150px)`,
+  small: fontSize.eSizeText,
+  large: fontSize.eSizeHead,
 };
 
 export const BasePoppins = styled.p`

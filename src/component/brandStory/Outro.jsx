@@ -30,7 +30,7 @@ const Pretendard28 = styled(BasePretendard26)`
   margin-top: ${vwCalc(18)};
   font-family: Pretendard;
   font-size: ${vwCalc(28)};
-  line-height: 1.5;
+  line-height: 153%;
 `;
 
 const ScrollTopButton = styled.button`
@@ -60,7 +60,8 @@ const SquareLink = styled(BaseShape).attrs({
   width: ${vwCalc(568)};
   height: ${vwCalc(473)};
   font-weight: 600;
-  background: ${(props) => props.$background};
+  background-image: ${(props) => props.$background};
+  background-size: cover;
   border-radius: ${vwCalc(33)};
   text-align: center;
 `;
