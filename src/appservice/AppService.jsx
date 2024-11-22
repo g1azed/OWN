@@ -160,22 +160,31 @@ const VariousKitWrap = styled.div`
 const VariousTypes = styled.div`
     margin: 0.57vw 0 2.6vw 0;
     background: ${colors.mainIvory};
-    border-radius: 62px;
-    padding: 3.62vw 4.47vw 4.47vw 3.22vw;
+    border-radius: 3.22vw;
+    padding: 3.62vw 4.47vw 2.55vw 3.22vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     div.variousType_img_wrap{
-        margin-left: 8.8vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2.33vw;
-        div{
+        margin-left: 6.8vw;
+        p{ 
+            padding-top: 2.44vw;
+            font-size: 1.04vw;
+            line-height: 1.51vw;
+        }
+        div.variousType_imgs{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.33vw;
             text-align: center;
             img{
                 width: 5.26vw;
                 margin-bottom: 1.25vw;
+            }
+            span{
+                font-size: 0.88vw;
             }
         }
     }
@@ -453,30 +462,34 @@ const AppService = () => {
                 <VariousTypes>
                     <AppServiceH2 className="various_h2">Activities <br/> of 6 kits </AppServiceH2>
                     <div className="variousType_img_wrap">
-                        <div> 
-                            <img src={kit_1} />
-                            <span> SPOT </span>
+                        <div className="variousType_imgs">
+                            <div> 
+                                <img src={kit_1} />
+                                <span> SPOT </span>
+                            </div>
+                            <div> 
+                                <img src={kit_2} />
+                                <span> CREATE </span>
+                            </div>
+                            <div> 
+                                <img src={kit_4} />
+                                <span> VACTION </span>
+                            </div>
+                            <div> 
+                                <img src={kit_3} />
+                                <span> GAME </span>
+                            </div>
+                            <div> 
+                                <img src={kit_5} />
+                                <span> ONE DAY </span>
+                            </div>
+                            <div> 
+                                <img src={kit_6} />
+                                <span> RANDOM </span>
+                            </div>
                         </div>
-                        <div> 
-                            <img src={kit_2} />
-                            <span> CREATE </span>
-                        </div>
-                        <div> 
-                            <img src={kit_4} />
-                            <span> VACTION </span>
-                        </div>
-                        <div> 
-                            <img src={kit_3} />
-                            <span> GAME </span>
-                        </div>
-                        <div> 
-                            <img src={kit_5} />
-                            <span> ONE DAY </span>
-                        </div>
-                        <div> 
-                            <img src={kit_6} />
-                            <span> RANDOM </span>
-                        </div>
+                        <p> 6가지 테마의 아날로그 키트를 제공하여 디지털의 사용을 줄이고, <br/>
+                        각자가 원하는 방식에서 본인의 취향대로 휴식을 취할 수 있도록 돕습니다.  </p>
                     </div>
                 </VariousTypes>
 
