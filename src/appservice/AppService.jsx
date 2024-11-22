@@ -23,6 +23,7 @@ import kit_6 from '../assets/appservice/kit_6.png'
 
 import ChooseMonthBg from '../assets/appservice/ChooseMonthBg.png'
 import homeBgImg from '../assets/appservice/home_bg.png'
+import homeGif from '../assets/appservice/home_gif.gif'
 import homePop_1 from  '../assets/appservice/home_pop_1.png'
 import homePop_2 from  '../assets/appservice/home_pop_2.png'
 import homePop_3 from  '../assets/appservice/home_pop_3.png'
@@ -33,9 +34,9 @@ import restingCartImg from '../assets/appservice/restingCartImg.png'
 
 import Month_MotionOn from '../assets/appservice/month_motion_on.jpg'
 
-import Statis_img_1 from '../assets/appservice/statis_img_1.png'
-import Statis_img_2 from '../assets/appservice/statis_img_2.png'
-import Statis_img_3 from '../assets/appservice/statis_img_3.png'
+import Statis_img_1 from '../assets/appservice/statis_img_1.gif'
+import Statis_img_2 from '../assets/appservice/statis_img_2.gif'
+import Statis_img_3 from '../assets/appservice/statis_img_3.gif'
 import Statis_bar from '../assets/appservice/statistic_bar.png'
 
 import RecordImg from '../assets/appservice/record_img.png'
@@ -234,12 +235,19 @@ const HomeWrap = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     h4{
         padding-bottom: 1.77vw;
     }
     img.home_bg{
         width: auto;
         height: 55.46vw;
+    }
+    img.home_gif{
+        position: absolute;
+        bottom: 0;
+        width: 25.53vw;
+        height: auto;
     }
     .home_popup_wrap{
         width: 100%;
@@ -279,6 +287,7 @@ const StatisWrap = styled.div`
         width: 60.88vw;
         position: absolute;
         left:50%;
+        top: 9.94vw;
         transform:translateX(-50%);
         
     }
@@ -293,10 +302,10 @@ const StatisWrap = styled.div`
             object-fit: contain;
         }
         img:nth-child(2){
-            margin-top: 8.28vw;
+            margin-top: 4.84vw;
         }
         img:nth-child(3){
-            margin-top: 13.02vw;
+            margin-top: 9.53vw;
         }
     }
 `
@@ -490,6 +499,7 @@ const AppService = () => {
                 <AppServiceH2> home </AppServiceH2>
                 <AppServiceH4> 활동중인 키트는 홈화면 일러스트로 진행도 확인이 가능하고, <br/> 여러 알림으로 원활한 활동을 돕습니다. </AppServiceH4>
                 <img src={homeBgImg} className="home_bg"/>
+                <img src={homeGif} className="home_gif"/>
                 <AppServicePop />
                 <AppServiceLine />
             </HomeWrap>
