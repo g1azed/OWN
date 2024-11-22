@@ -35,10 +35,10 @@ const drawLine_Right = keyframes`
 
 /* svg component */
 const Left_line = styled(Left_1)`
-
+    height: auto;
     position: absolute;
-    top: -17vw;
-    left: 17vw;
+    top: -15vw;
+    left: 18vw;
     width: 18.125vw;
     path {
         stroke-dasharray: 1200;
@@ -48,9 +48,10 @@ const Left_line = styled(Left_1)`
     }
 `
 const Right_line_1 = styled(Right_1)`
+    height: auto;
     position: absolute;
-    top: -34vw;
-    right: 31vw;
+    top: -31vw;
+    right: 32vw;
     width: 7.86vw;
     path {
         stroke-dasharray: 1200;
@@ -60,9 +61,10 @@ const Right_line_1 = styled(Right_1)`
     }
 `
 const Right_line_2 = styled(Right_2)`
+    height: auto;
     position: absolute;
-    top: -34vw;
-    right: 19vw;
+    top: -31vw;
+    right: 19.5vw;
     width: 18.28vw;
     path {
         stroke-dasharray: 1200;
@@ -72,9 +74,10 @@ const Right_line_2 = styled(Right_2)`
     }
 `
 const Right_line_3 = styled(Right_3)`
+    height: auto;
     position: absolute;
     top: -21vw;
-    right: 19vw;
+    right: 19.5vw;
     width: 18.28vw;
     path {
         stroke-dasharray: 1200;

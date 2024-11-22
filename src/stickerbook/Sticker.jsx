@@ -10,7 +10,6 @@ from './StickerImg'
 
 import Moveable from "react-moveable";
 import html2canvas from 'html2canvas';
-import FileSaver from './FileSaver';
 
 const CategoryText = styled.p`
     font-size: 1.45vw;
@@ -89,17 +88,20 @@ const BtnWrap = styled.div`
 `
 
 const ResetBtn = styled.button`
-    border-radius: 50px;
+    border-radius: 2.6vw;
     background-color: ${colors.mainOrange};
     color: #fff;
     font-size: 1.66vw;
-    padding: 0.98vw 5.625vw;
+    font-weight: 600;
+    padding: 1vw 5.625vw;
 `
 const CraftingBtn = styled.button`
-    border-radius: 50px;
+    border-radius: 2.6vw;
     border: 0.1vw solid ${colors.mainOrange};
+    color: ${colors.mainOrange};
     font-size: 1.66vw;
-    padding: 0.98vw 4.47vw;
+    font-weight: 600;
+    padding: 1vw 4.47vw;
 `
 
 const DraggableImg = styled.img`
@@ -364,7 +366,7 @@ const Sticker = () => {
             </RecWrap>
             <BtnWrap> 
                     <ResetBtn onClick={handleReset}> Reset </ResetBtn>
-                    <CraftingBtn  onClick={handleSaveAsPng}> Crafting </CraftingBtn>
+                    <CraftingBtn onClick={handleSaveAsPng}> Crafting </CraftingBtn>
             </BtnWrap>
         </StickerBoxWrap>
     );
