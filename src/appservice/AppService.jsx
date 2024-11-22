@@ -161,18 +161,17 @@ const VariousTypes = styled.div`
     margin: 0.57vw 0 2.6vw 0;
     background: ${colors.mainIvory};
     border-radius: 3.22vw;
-    padding: 3.62vw 4.47vw 2.55vw 3.22vw;
+    padding: 3.62vw 4.47vw 4.47vw 3.22vw;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    div.variousType_img_wrap{
-        margin-left: 6.8vw;
+    gap: 6.85vw;
         p{ 
             padding-top: 2.44vw;
             font-size: 1.04vw;
             line-height: 1.51vw;
         }
-        div.variousType_imgs{
+        div.variousType_img_wrap{
 
             display: flex;
             align-items: center;
@@ -186,7 +185,6 @@ const VariousTypes = styled.div`
             span{
                 font-size: 0.88vw;
             }
-        }
     }
 `
 const ChooseMonth = styled.div`
@@ -462,7 +460,6 @@ const AppService = () => {
                 <VariousTypes>
                     <AppServiceH2 className="various_h2">Activities <br/> of 6 kits </AppServiceH2>
                     <div className="variousType_img_wrap">
-                        <div className="variousType_imgs">
                             <div> 
                                 <img src={kit_1} />
                                 <span> SPOT </span>
@@ -488,9 +485,6 @@ const AppService = () => {
                                 <span> RANDOM </span>
                             </div>
                         </div>
-                        <p> 6가지 테마의 아날로그 키트를 제공하여 디지털의 사용을 줄이고, <br/>
-                        각자가 원하는 방식에서 본인의 취향대로 휴식을 취할 수 있도록 돕습니다.  </p>
-                    </div>
                 </VariousTypes>
 
                 <h5>( 02 ) Choose one per month - 매달마다 하나씩 선택하는  </h5>
