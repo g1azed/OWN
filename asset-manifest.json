@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "https://g1azed.github.io/own.io/static/css/main.45895189.css",
-    "main.js": "https://g1azed.github.io/own.io/static/js/main.1010756a.js",
+    "main.js": "https://g1azed.github.io/own.io/static/js/main.492d0b74.js",
+    "static/media/home_gif.gif": "https://g1azed.github.io/own.io/static/media/home_gif.a706fff604eab06a1311.gif",
     "static/media/analog_f2.png": "https://g1azed.github.io/own.io/static/media/analog_f2.5f00051234acd5031582.png",
     "static/media/analog_f.png": "https://g1azed.github.io/own.io/static/media/analog_f.81b435a8b52a679bf3dc.png",
     "static/media/month_motion_on.jpg": "https://g1azed.github.io/own.io/static/media/month_motion_on.1f22ac8c76c095d6e84d.jpg",
@@ -20,14 +21,17 @@
     "static/media/solution_big.png": "https://g1azed.github.io/own.io/static/media/solution_big.00dac4e1129c55f66969.png",
     "static/media/OwnColorBg_4.png": "https://g1azed.github.io/own.io/static/media/OwnColorBg_4.20e441632e8eb4cbf6e7.png",
     "static/media/wish_1.gif": "https://g1azed.github.io/own.io/static/media/wish_1.2035440b6ca8131f225f.gif",
+    "static/media/statis_img_3.gif": "https://g1azed.github.io/own.io/static/media/statis_img_3.a29af0541bb3ed090f6e.gif",
     "static/media/tiredRelax.png": "https://g1azed.github.io/own.io/static/media/tiredRelax.5f9cae07e30d68b1f301.png",
     "static/media/own_logo_2.png": "https://g1azed.github.io/own.io/static/media/own_logo_2.87771691e4f81dcfd99a.png",
     "static/media/graph_circle.gif": "https://g1azed.github.io/own.io/static/media/graph_circle.1b866600ed400d536fad.gif",
+    "static/media/statis_img_2.gif": "https://g1azed.github.io/own.io/static/media/statis_img_2.6a4bc62107a3dc8eeff5.gif",
     "static/media/own_logo_3.png": "https://g1azed.github.io/own.io/static/media/own_logo_3.697d55128d9f803a55f7.png",
     "static/media/personal_02.gif": "https://g1azed.github.io/own.io/static/media/personal_02.fdc53e352dad338178bd.gif",
     "static/media/Pretendard-Regular.woff": "https://g1azed.github.io/own.io/static/media/Pretendard-Regular.303253288b0ba99db532.woff",
     "static/media/typo_e.png": "https://g1azed.github.io/own.io/static/media/typo_e.587f6013f68347fde6eb.png",
     "static/media/insight2.png": "https://g1azed.github.io/own.io/static/media/insight2.fc5313dc6b0ac2cf7ef1.png",
+    "static/media/statis_img_1.gif": "https://g1azed.github.io/own.io/static/media/statis_img_1.75cab81fe83d3dbfc873.gif",
     "static/media/Pretendard-Regular.woff2": "https://g1azed.github.io/own.io/static/media/Pretendard-Regular.38bed7de46e7b9049ced.woff2",
     "static/media/insight3.png": "https://g1azed.github.io/own.io/static/media/insight3.d01e6369a3fc336f45fa.png",
     "static/media/record_img.png": "https://g1azed.github.io/own.io/static/media/record_img.b7f6f5a62efc3c39ed7a.png",
@@ -68,7 +72,6 @@
     "static/media/solution_rest1.png": "https://g1azed.github.io/own.io/static/media/solution_rest1.fdffd4adf8225617d9a0.png",
     "static/media/solution_kit2.png": "https://g1azed.github.io/own.io/static/media/solution_kit2.cd2462a18859de75282a.png",
     "static/media/mainHome_bg8.webp": "https://g1azed.github.io/own.io/static/media/mainHome_bg8.d61904a9f78571a3e79b.webp",
-    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.b988386326c8e1e1ab4a.png",
     "static/media/Ill_9.svg": "https://g1azed.github.io/own.io/static/media/Ill_9.51f086d1013956d08fae1d4e8925c9b8.svg",
     "static/media/restingCartImg.png": "https://g1azed.github.io/own.io/static/media/restingCartImg.c889a3d0f31adcfd119d.png",
     "static/media/home_pop_1.png": "https://g1azed.github.io/own.io/static/media/home_pop_1.23f26176d68bf652faa2.png",
@@ -86,14 +89,11 @@
     "static/media/paper1.png": "https://g1azed.github.io/own.io/static/media/paper1.73b897d3e2140194e4e6.png",
     "static/media/Poppins-Regular.woff": "https://g1azed.github.io/own.io/static/media/Poppins-Regular.aa27b6bdbf91d267ef8a.woff",
     "static/media/body_8.svg": "https://g1azed.github.io/own.io/static/media/body_8.8efe5fb3bdb892659e21975c6fb0e37a.svg",
-    "static/media/statis_img_2.png": "https://g1azed.github.io/own.io/static/media/statis_img_2.0ff911ae47d6c294d930.png",
-    "static/media/statis_img_3.png": "https://g1azed.github.io/own.io/static/media/statis_img_3.11a044d8962a4de6d712.png",
     "static/media/solution_experience1.png": "https://g1azed.github.io/own.io/static/media/solution_experience1.fdcd010082cf4e99e77f.png",
     "static/media/painPoint3_1.png": "https://g1azed.github.io/own.io/static/media/painPoint3_1.dd466a12e801d8a8a38c.png",
     "static/media/Poppins-SemiBold.woff2": "https://g1azed.github.io/own.io/static/media/Poppins-SemiBold.3c3f3613b59d581739fc.woff2",
     "static/media/Poppins-Medium.woff2": "https://g1azed.github.io/own.io/static/media/Poppins-Medium.563f976db73ca07d8fc3.woff2",
     "static/media/needs2.png": "https://g1azed.github.io/own.io/static/media/needs2.2e015c369077a1e1e69c.png",
-    "static/media/statis_img_1.png": "https://g1azed.github.io/own.io/static/media/statis_img_1.daf145c124e7c3f1cc1c.png",
     "static/media/body_3.svg": "https://g1azed.github.io/own.io/static/media/body_3.e46f78af8045d7c7a3dd28048888fd3e.svg",
     "static/media/own_story.png": "https://g1azed.github.io/own.io/static/media/own_story.a11848945d1b9166d3cf.png",
     "static/media/Poppins-Regular.ttf": "https://g1azed.github.io/own.io/static/media/Poppins-Regular.f989af38f53e1ad4b2d2.ttf",
@@ -114,6 +114,7 @@
     "static/media/needs3.png": "https://g1azed.github.io/own.io/static/media/needs3.9eecc9249af945646ad2.png",
     "static/media/body_9.svg": "https://g1azed.github.io/own.io/static/media/body_9.99a1a07569618936cd24b57fc1ba1eab.svg",
     "static/media/Poppins-Regular.woff2": "https://g1azed.github.io/own.io/static/media/Poppins-Regular.0f67076434b3fb771a5d.woff2",
+    "static/media/home_bg.png": "https://g1azed.github.io/own.io/static/media/home_bg.94b1072b6a38afdafb54.png",
     "static/media/Ill_B3.svg": "https://g1azed.github.io/own.io/static/media/Ill_B3.d3faa842404621e42d72318001a26542.svg",
     "static/media/metapo_9.png": "https://g1azed.github.io/own.io/static/media/metapo_9.c80aba426b3fd0b4c30b.png",
     "static/media/typo_kk.png": "https://g1azed.github.io/own.io/static/media/typo_kk.900bdfb650551a207734.png",
@@ -190,10 +191,10 @@
     "static/media/right_1.svg": "https://g1azed.github.io/own.io/static/media/right_1.3b8919e76ca72941b575a63d6bd2ce70.svg",
     "static/media/right_2.svg": "https://g1azed.github.io/own.io/static/media/right_2.132c2cc39523584c13996aa176b8af62.svg",
     "main.45895189.css.map": "https://g1azed.github.io/own.io/static/css/main.45895189.css.map",
-    "main.1010756a.js.map": "https://g1azed.github.io/own.io/static/js/main.1010756a.js.map"
+    "main.492d0b74.js.map": "https://g1azed.github.io/own.io/static/js/main.492d0b74.js.map"
   },
   "entrypoints": [
     "static/css/main.45895189.css",
-    "static/js/main.1010756a.js"
+    "static/js/main.492d0b74.js"
   ]
 }
